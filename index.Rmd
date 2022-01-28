@@ -1,7 +1,7 @@
 ---
 title: "Visual Analytics"
 description: |
-  Welcome to the website. I hope you enjoy it!
+ Hello there, I am Karishma Yadav. Welcome to my Website!
 site: distill::distill_website
 ---
 
@@ -12,4 +12,4 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-
+This website is built using the *distill* package in R. It is composed of my submissions for the **Visual Analytics** module taught by Professor **Kam Tin Seong** at the **Singapore Management University**. I hope you like my work!

@@ -1,23 +1,26 @@
 name: "VA"
-title: "Visual Analytics"
+title: "Home Page"
 description: |
   My Website
+theme: theme.css
 output_dir: "_site"
 navbar:
   right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
-  left:
     - text: "Take-Home Exercises"
       menu:
       - text: "Exercise 1"
         href: "TH_Exercise/TH_Ex01/TH_Ex01.html"
+        theme: "thex01.css"
     - text: "DataViz Makeover"
       menu:
       - text: "DataViz 1"
         href: Dataviz1.html
       - text: "DataViz 2"
         href: Dataviz2.html
-output: distill::distill_article
+    - text: "About"
+      href: about.html
+    - icon: fab fa-github
+      href: https://github.com/Karishma1109/VA
+output: 
+    distill::distill_article:
+      toc: true
