@@ -114,7 +114,8 @@ pareto_chart <- ggplot(freq_cum, aes(x = reorder(`Sub-Category`,-Returns))) +
                 geom_hline(aes(yintercept = sum(freq_cum$Returns)*.8),colour="#999999", linetype="dashed")
 
 pareto_chart <- pareto_chart +
-                labs(title = "Pareto Chart of Returns frequency for Sub-Categories of Products for Superstore in 2021", subtitle = "Top 3 Sub-Categories returned for Superstore include Binders, Books and Phones", 
+                labs(title = "Pareto Chart of Returns frequency for Sub-Categories of Products for Superstore in 2021", 
+                subtitle = "Top 3 Sub-Categories returned for Superstore include Binders, Books and Phones", 
                 x = 'Sub-Categories', y ='Frequency of Returns')
   
 pareto_chart <- pareto_chart + 
