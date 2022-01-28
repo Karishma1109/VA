@@ -40,7 +40,7 @@ for(p in packages)
 ## 1.1 Data Preparation
 ### Loading the data required for the visualization
 
-Loading the excel file "Superstore-2021.xls" using the function *read_xls* from the **readxl** module. The excel file contains several sheets, for reading worksheets, the sheet names can be specified in the *sheet* argument in the *read_xls* function. The work sheets "Orders" and "Returns" are loaded into data frames "orders" and "returns" respectively.
+The excel file "Superstore-2021.xls" is loaded using the function *read_xls* from the **readxl** module. It contains several sheets, the *sheet* argument in the *read_xls* function is used to specify the worksheet names. The work sheets "Orders" and "Returns" are loaded into data frames "orders" and "returns" respectively.
  
 ```{r,code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 orders <- read_xls("Data/Superstore-2021.xls", sheet = "Orders")
@@ -65,14 +65,14 @@ freq_returned <- joined_tab %>%
                  ungroup()
 ```
 
-Let us now sort the the data in the "freq_returned" data frame by the number of returns.
+Then the data in the "freq_returned" data frame is sorted by the number of returns.
 
 ```{r, code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 freq_sorted <- freq_returned[order(freq_returned$Returns,
                                    decreasing=TRUE), ]
 ```
 
-Now, to create a pareto chart, we need to get the cumulative returns frequency for each sub-category of product. The cumulative returns frequency is further used to calculate the cumulative returns frequency as a percentage of total cumulative returns frequency.
+To create a pareto chart, the cumulative returns frequency for each sub-category of product were calculated. The cumulative returns frequency were further used to calculate the cumulative returns frequency as a percentage of total cumulative returns frequency.
 
 ```{r, code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 freq_cum <- freq_sorted %>%
@@ -89,7 +89,7 @@ freq_cum <- freq_cum %>%
 
 ### Pareto chart using R
 
-The following **ggplot2** functions are used to create the standard pareto chart:
+The following **ggplot2** functions were used to create the standard pareto chart:
 
 1. *geom_bar*: Used to create the bars of frequency of returns for each sub-category. The argument stat = "identity" is used to ensure that the heights of the bars represent the values to y aesthetic.
 
@@ -101,8 +101,8 @@ The following **ggplot2** functions are used to create the standard pareto chart
 
 5. *scale_y_continuous*: Used to specify the tick labels for the y-axis, and add a secondary axis to the plot using the argument "sec.axis".
 
-These functions are added to the *ggplot2* layout layer by layer as shown in the folded code.
-Other functions, *labs* and *theme* are used and their arguments are modified to create the plot same as the one sketched above.
+These functions were added to the *ggplot2* layout layer by layer as shown in the folded code.
+Other functions, *labs* and *theme* were used and their arguments were modified to create the plot same as the one sketched above.
 
 ```{r, code_folding=TRUE, layout="l-body-outset",fig.height=4,fig.width=7,echo = TRUE, warning = FALSE, message = FALSE,}
 labels_cumperc <- c("0"="0%", "10"="10%", "20"="20%", "30"="30%", "40"="40%", "50"="50%", 
@@ -137,7 +137,7 @@ pareto_chart
 # 2. Population Pyramid for the Singapore Population
 
 ## 2.1 Data Preparation
-This visualization uses variables from the data set taken from the link. The data set is loaded as follows:
+This visualization uses variables from the data set taken from the link. The data set was loaded using the *read_csv* function in R.
 
 ```{r,code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 sing_popn <- read_csv("Data/respopagesextod2021.csv")
@@ -149,7 +149,7 @@ age_order = c("0_to_4", "5_to_9", "10_to_14", "15_to_19",    "20_to_24","25_to_2
 
 ```
 
-To get the population organized separately for Males and Females in various age groups, we will group by the data frame by "AG" and "Sex" fields and take the sum of "Population".
+To get the population organized separately for Males and Females in various age groups, the data frame was grouped by "AG" and "Sex" fields and the sum of "Population" was calculated on aggregation.
 
 ```{r, code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 sing_popnew <- sing_popn %>%
@@ -161,7 +161,7 @@ tot_pop = sum(sing_popnew$Population)
 
 ```
 
-To create the population pyramid, horizontal bar charts are used to visualize the population of males and females into various age groups and aligning them on the same central axis. To align the central axis, transformation of the population of males variable is done as negative and then labelled as their original values in the plot.
+To create the population pyramid, horizontal bar charts were used to visualize the population of males and females into various age groups and aligning them on the same central axis. To align the central axis, transformation of the population of males variable was done as negative and then labelled as its original values in the plot.
 
 ```{r, code_folding=TRUE, echo = TRUE, warning = FALSE, message = FALSE}
 sing_popnew$Pop <- ifelse(sing_popnew$Sex == "Males",
@@ -175,10 +175,10 @@ sing_popnew$Pop <- ifelse(sing_popnew$Sex == "Males",
 ![](Pyramid_sketch.jpeg){width=1000px}
 To visualize the above sketch in R, following functions from *ggplot2* have been used:
 
-1. *geom_bar*: 2 geom_bars are used to create bars of population values for Males and Females separately for the corresponding age groups.
+1. *geom_bar*: 2 geom_bars were used to create bars of population values for Males and Females separately for the corresponding age groups.
 2. *coord_flip*: Used to flip the coordinate axes and transform the default orientation of bars from vertical to horizontal.
 
-Along with the above 2 functions, *scale_x_continuous*, *scale_y_continuous*, *labs* and *theme* functions are used to change the color, labels and titles of the plot.
+Along with the above 2 functions, *scale_x_continuous*, *scale_y_continuous*, *labs* and *theme* functions were used to change the color, labels and titles of the plot.
 
 ### Population Pyramid using R:
 
@@ -228,8 +228,8 @@ The above visualizations were also created using [Tableau](https://public.tablea
 
 6. **End-to-End Solution**: R provides end-to-end solution for a project that requires data cleaning, transformation, visualization and modelling whereas tableau is good for creating good visualizations if clean data is provided.
 
-## References {.appendix}
+## References: {.appendix}
 
-Distill for RMarkdown [Link](https://rstudio.github.io/distill/basics.html)
+[Distill for RMarkdown](https://rstudio.github.io/distill/basics.html)
 
-ggplot2 documentation [Link](https://ggplot2.tidyverse.org/reference/)
+[ggplot2 documentation](https://ggplot2.tidyverse.org/reference/)

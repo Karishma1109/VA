@@ -228,7 +228,7 @@ The above visualizations were also created using [Tableau](https://public.tablea
 
 6. **End-to-End Solution**: R provides end-to-end solution for a project that requires data cleaning, transformation, visualization and modelling whereas tableau is good for creating good visualizations if clean data is provided.
 
-## References {.appendix}
+## References: {.appendix}
 
 [Distill for RMarkdown](https://rstudio.github.io/distill/basics.html)
 
