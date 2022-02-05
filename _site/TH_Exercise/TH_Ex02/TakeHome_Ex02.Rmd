@@ -198,7 +198,7 @@ label = list(
 
 ggplotly(p, tooltip = ("text")) %>%
   style(hoverlabel = label) %>%
-  layout(autosize = F, width = 500, height = 300)%>% animation_opts(1000, easing = "linear")
+  layout(autosize = F, width = 600, height = 350)%>% animation_opts(1000, easing = "linear")
 ```
 Here, we can see that Punggol was almost uninhabited in the early 2000s and rapidly grew over the years. While Sengkang had some population in the 2000s, the numbers have increased sharply as can be seen from the animation. An interesting point to note is that the Males to Females ratio for both of these areas is almost the same and the shape of the pyramid is also strikingly similar with skewness around the age groups 35 to 49. 
 
@@ -245,7 +245,7 @@ label = list(
 
 ggplotly(p1, tooltip = ("text")) %>%
   style(hoverlabel = label) %>%
-  layout(autosize = F, width = 750, height = 300)%>% animation_opts(1000, easing = "linear")
+  layout(autosize = F, width = 750, height = 350)%>% animation_opts(1000, easing = "linear")
 ```
 The animations of the above 3 planning reveals that the population numbers shifting in the higher age groups as the years progress. For Jurong West, the birth rates are slowly increasing. However, an interesting phenomenon here is that while the population trend plot for Woodlands and Yishun showed that the population is slowing increasing, the birth rates seem to be decreasing suggesting the slow growth in population was rather due to migration.
 
@@ -290,7 +290,7 @@ label = list(
 
 ggplotly(p2, tooltip = ("text")) %>%
   style(hoverlabel = label) %>%
-  layout(autosize = F, width = 750, height = 300)%>% animation_opts(1000, easing = "linear")
+  layout(autosize = F, width = 750, height = 350)%>% animation_opts(1000, easing = "linear")
 ```
 These areas show that the birth rates are slowly decreasing and the population is slowly ageing. When this insight is compared to the population trendlines for these areas, it can be said that there has also been in-migration in these areas. Because actually these also fall in negative population areas based on birth rates.
 
@@ -334,7 +334,7 @@ label = list(
 
 ggplotly(p3, tooltip = ("text")) %>%
   style(hoverlabel = label) %>%
-  layout(autosize = F, width = 500, height = 300)%>% animation_opts(1000, easing = "linear")
+  layout(autosize = F, width = 600, height = 350)%>% animation_opts(1000, easing = "linear")
 ```
 The above  animation shows that the birth rates are decreasing in these planning areas and the population is also ageing. 
 
