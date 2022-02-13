@@ -235,14 +235,17 @@ The prepared data set looks as follows:
 
 
 ## 4.3 Visualization Preparation Steps
+
 **Step 1:**
 Switch to Sheet 1 was done to start creating the visualization. Then the 'Year' field was dragged from the *Data * pane and dropped into the *Columns * tab as shown in *Fig. 11*.
 
 ![*Fig. 11: Adding the 'Year' field*](images/image19.jpg){width=80%}
+
 **Step 2:**
 Then the 'LFPR(%)' field was dragged from the *Data * pane and dropped into the *Rows * tab. Subsequently, the measure for it was selected as "SUM", this was done to aggregate the LFPR(%) values for all the age-groups first. 
 
 ![*Fig. 12: Adding the 'SUM(LFPR(%))' *](images/image20.jpg){width=80%}
+
 
 **Step 3:**
 In this step, the 'Age Groups' field was dragged from the *Data * pane and dropped into the *Columns * tab. Merely placing the 'Age Groups' field next to the 'Year' field resulted in a different plot, then swapping their places resulted in the desired plot shown in *Fig. 13*.
@@ -262,14 +265,14 @@ Then points were added to the line charts by selected the appropriate marker fro
 **Step 6:**
 In this step, the y-axis label and tick marks were edited. First, the y-axis label tab was right-clicked and *Edit Axis * option was chosen, then the label name and tick options were changed. The detailed steps are shown in *Fig 16a * and *Fig 16b*.  
 
-![*Fig. 16a: Editing the y-axis*](images/image25.jpg){width=70%}
+![*Fig. 16a: Editing the y-axis*](images/image25.jpg){width=50%}
 
 ![*Fig. 16b: Changing the label name and tick options for y-axis*](images/image26.jpg){width=70%}
 
 **Step 7:**
 Then *Caption * option was checked in the drop-down menu that appears on right clicking the chart area. And the caption was edited as shown below.
 
-![*Fig. 17: Adding caption to the chart*](images/image27.jpg){width=70%}
+![*Fig. 17: Adding caption to the chart*](images/image27.jpg){width=50%}
 
 **Step 8:**
 In this step, the borders were changed using the *Borders * option from the *Format * tab in Tableau. The detailed changes are depicted in *Fig 18*.
@@ -279,19 +282,19 @@ In this step, the borders were changed using the *Borders * option from the *For
 **Step 9:**
 The chart title and sub-title were added by double-clicking on *Sheet 1*.
 
-![*Fig. 19: Adding Chart Title and sub-title*](images/image30.jpg){width=70%}
+![*Fig. 19: Adding Chart Title and sub-title*](images/image30.jpg){width=50%}
 
 **Step 10:**
 In this step, annotations were added to the chart by right-clicking on the chart and selecting the annotations. Two annotation options were used in the plot - *area* and *point*. The *area* annotation allows addition of text anywhere in the chart and the *point* annotation allows to point to any point on the plot. The created annotations were formatted using the options that appear on right-clicking the annotations. The detailed steps are shown below.
 
-![*Fig. 20a: Addting annotations*](images/image28.jpg){width=70%}
+![*Fig. 20a: Addting annotations*](images/image28.jpg){width=50%}
 
-![*Fig. 20b: Change the text and text style of annotations*](images/image31.jpg){width=70%}
+![*Fig. 20b: Change the text and text style of annotations*](images/image31.jpg){width=50%}
 
 
-![*Fig. 20c: Format the annotations*](images/image32.jpg){width=70%}
+![*Fig. 20c: Format the annotations*](images/image32.jpg){width=40%}
 
-![*Fig. 20d: Format options choosen for annotations*](images/image33.jpg){width=70%}
+![*Fig. 20d: Format options choosen for annotations*](images/image33.jpg){width=40%}
 
 
 The final visualization can be found my [tableau](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes) account:
