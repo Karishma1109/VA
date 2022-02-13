@@ -142,12 +142,18 @@ Here is the sketch of the proposed visualization:
 ![*Fig. 1: Proposed sketch*](images/sketch.jpeg)
 
 **Advantages of the proposed visualization over the given one:**
+   
    1. The title clearly defines what data is represented in the data visualization and the sub-title gives an interesting insight from the visualization. The title also clearly defines the abbreviation LFPR before using it.
+   
    2. The axes labels represent the data represented by them and are non-ambiguous. The tick marks on the y-axis have 10 major ticks for LFPR(%) values ranging from 0 to 100 and 10 minor tick marks for each of the 10 major tick interval, together they cover the 100 percentage points of LFPR(%). This level of detail makes it easier for the users to map the points on the chart to the LFPR(%) values easily.
    The lower x-axis label contains 12 tick marks for each of the 12 years which make it easier for the user to map data on the line charts to each of the years.
+   
    3. The line plots represent the changes in LFPR(%) more clearly, together with the markers which make it easy for the users to map the LFPR(%) values to the corresponding years.
+   
    4. The ordering of the plots in the increasing order of age-groups makes it easier for the users to gain insights about LFPR(%) changes as they will know where to find which age-group.
+   
    5. The single color representation of the line charts clearly tell the user that they represent different values of same features.
+   
    6. The added annotations on the chart make the data visualization complete and independent of any explanation.
    
 ## 4.2 Data Preparation Steps
@@ -291,25 +297,13 @@ In this step, annotations were added to the chart by right-clicking on the chart
 The final visualization can be found my [tableau](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes) account:
 ![*Fig. 21: Dataviz Makeover*](images/final_dv.png)
 
-## 4.5 Major Observations from the data visualization:
+## 4.4 Major Observations from the data visualization:
 
    1. The age groups 24 to 54 have LFPR(%) over 70% indicating that this age-group represents the working population of Singapore. The lower age group 15-19 and higher age-group 70 & over have similar LFPR(%). The age-group 20 to 24 has LFPR(%) between 50% to 70% for the years 2010 to 2021 indicating that the residents in Singapore start working in their early 20s.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+   2. The LFPR(%) changes for the age-groups 15 to 24 vary with increases and decreases in the LFPR(%) for the period 2010-2021. The age-group 24 to 29 saw a steady LFPR(%) between 2015 to 2021 while the age-groups 30 to 54 saw slight increases in LFPR(%). The older age-groups have seen comparatively steep rise in LFPR(%) for the years 2010-2021. 
+   
+   3. The LFPR(%) changes for the age-group 15 to 19 and 20 to 24 show a fall in LFPR(%) for the year 2020, which coincides with the COVID-19. The fall in the age-group 20-24 is higher compared to 15-19, while the rest of the age-groups did not see any fall in 2020 and the higher age-groups from 55 onward in fact still continued to see a increasing LFPR(%)
 
 ## References: {.appendix}
 
