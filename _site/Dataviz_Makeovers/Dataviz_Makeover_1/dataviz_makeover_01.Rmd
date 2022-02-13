@@ -298,7 +298,7 @@ In this step, annotations were added to the chart by right-clicking on the chart
 
 
 The final visualization can be found my [tableau](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes) account:
-![*Fig. 21: Dataviz Makeover*](images/final_dv.png)
+![*Fig. 21: Dataviz Makeover*](images/final_dv.png){width=150%}
 
 ## 4.4 Major Observations from the data visualization:
 
