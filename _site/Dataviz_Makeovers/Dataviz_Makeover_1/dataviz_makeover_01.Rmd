@@ -44,7 +44,7 @@ Before jumping onto pointing specific issues in the chart, getting the overall c
 Important aspects to consider while judging the context of a chart^2^:
     
    a. **Know the requirements of the visualization**:
-  The chart aims to show the trends in LFPR across various age-groups in the Singapore over the time period 2010 to 2012.
+  The chart aims to show the trends in LFPR across various age-groups in the Singapore over the time period 2010 to 2021.
    
    b. **Know the audience**: 
   This chart is created using data provided by the Ministry of Manpower (MOM), Singapore. Therefore, it is safe to assume that the data is generated for a wide audience including but not limited to the policy makers, the corporate sector and the general population for their awareness. 
@@ -297,14 +297,17 @@ In this step, annotations were added to the chart by right-clicking on the chart
 ![*Fig. 20d: Format options choosen for annotations*](images/image33.jpg){width=40%}
 
 
-The final visualization can be found my [tableau](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes) account:
+The final visualization can be found in my Tableau account using this [tableau link](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes). 
+
 ![*Fig. 21: Dataviz Makeover*](images/final_dv.png){width=150%}
 
 ## 4.4 Major Observations from the data visualization:
 
-   1. The age groups 24 to 54 have LFPR(%) over 70% indicating that this age-group represents the working population of Singapore. The lower age group 15-19 and higher age-group 70 & over have similar LFPR(%). The age-group 20 to 24 has LFPR(%) between 50% to 70% for the years 2010 to 2021 indicating that the residents in Singapore start working in their early 20s.
+   1. The age groups 24 to 54 have LFPR(%) over 70% indicating that this age-group represents the working population of Singapore. 
+   2. The lower age group 15-19 and higher age-group 70 & over have similar LFPR(%) lying in the range 10-20% LFPR(%), this is because population in the age-group 15-19 is too young to participate and the 70 & over composes of the population close to retirement. 
+   3. The age-group 20 to 24 has LFPR(%) between 50% to 70% for the years 2010 to 2021 indicating that the residents in Singapore start working in their early 20s.
    
-   2. The LFPR(%) changes for the age-groups 15 to 24 vary with increases and decreases in the LFPR(%) for the period 2010-2021. The age-group 24 to 29 saw a steady LFPR(%) between 2015 to 2021 while the age-groups 30 to 54 saw slight increases in LFPR(%). The older age-groups have seen comparatively steep rise in LFPR(%) for the years 2010-2021. 
+   2. The LFPR(%) changes for the age-groups 15 to 24 have up and down variations in the LFPR(%) for the period 2010-2021. The age-group 24 to 29 saw a steady LFPR(%) between 2015 to 2021 while the age-groups 30 to 54 saw slight increases in LFPR(%). The older age-groups have seen comparatively steep rise in LFPR(%) for the years 2010-2021. These trends suggest that the population in Singapore could be ageing.
    
    3. The LFPR(%) changes for the age-group 15 to 19 and 20 to 24 show a fall in LFPR(%) for the year 2020, which coincides with the COVID-19. The fall in the age-group 20-24 is higher compared to 15-19, while the rest of the age-groups did not see any fall in 2020 and the higher age-groups from 55 onward in fact still continued to see a increasing LFPR(%)
 
