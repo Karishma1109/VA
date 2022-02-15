@@ -179,23 +179,23 @@ The view of the imported *csv* file is displayed in *Fig. 3b*.
 **Step 4:**
 In this step, the sheet *mrsd_Res_LFPR_2* containing the data used in our visualization was selected. The view is shown in *Fig. 4 * below.
 
-![*Fig. 4: Selecting the required sheet from the dataset*](images/image4.jpg){width=90%}
+![*Fig. 4: Selecting the required sheet from the dataset*](images/image4.jpg){width=80%}
 
 **Step 5:**
 In *Fig. 4 *, it can be seen that the column names are not recognized automatically by Tableau. In this step, we resolve this issue by checking the check box next to *Cleaned with Data Interpreter *. Subsequently, the data set columns were appropriately adjusted by Tableau.
 
-![*Fig. 5: Adjusting the column names in Tableau*](images/image5.jpg){width=90%}
+![*Fig. 5: Adjusting the column names in Tableau*](images/image5.jpg){width=80%}
 
 
 **Step 6:**
 Then the year columns ranging from 1991 to 2021 were selected and *Pivot* option was selected from the drop-down menu that appears on clicking the inverted triangle box in the column header as shown in *Fig. 6 * below. 
 
-![*Fig. 6: Pivoting the year columns*](images/image6.jpg){width=70%}
+![*Fig. 6: Pivoting the year columns*](images/image6.jpg){width=60%}
 
 **Step 7:**
 The data set got transformed and then contained 3 columns, the un-pivoted 'Age(Years)/Sex' and 2 pivoted columns. The pivoted columns were renamed by choosing the rename option from the drop-down menu that appeared by clicking the inverted triangle box (that can be found by hovering on the column headers). The column that contained year data was renamed as 'Year' and the column with LFPR(%) values was renamed as 'LFPR(%)' as shown in *Fig. 7b* 
 
-![*Fig. 7a: Renaming the pivoted columns*](images/image7.jpg){width=70%}
+![*Fig. 7a: Renaming the pivoted columns*](images/image7.jpg){width=60%}
 
 
 ![*Fig. 7b: Renamed columns*](images/image8.jpg){width=80%}
@@ -203,10 +203,10 @@ The data set got transformed and then contained 3 columns, the un-pivoted 'Age(Y
 **Step 8:**
 Our use case involved years from 2010-2021, hence the earlier year records were removed using the *Filter * function in Tableau. The filter tab can be found top right corner of the page, a pop up window opens on clicking the *Add * option under the *Filter * tab. A new filter was added by clicking on *Add * button and choosing the field on which the filter had to be added. Years 1991 to 2009 were selected and excluded. The detailed steps are shown in the *Fig. 8a* to *Fig. 8d* below.
 
-![*Fig. 8a: Filter tab*](images/image9.jpg){width=80%}
+![*Fig. 8a: Filter tab*](images/image9.jpg){width=70%}
 
 
-![*Fig. 8b: Add a filter*](images/image10.jpg){width=70%}
+![*Fig. 8b: Add a filter*](images/image10.jpg){width=50%}
 
 ![*Fig. 8c: Choosing the field 'Year' on which filter is to be added*](images/image11.jpg){width=50%}
 
@@ -215,7 +215,7 @@ Our use case involved years from 2010-2021, hence the earlier year records were 
 **Step 9:**
 After the 'Year' field was filtered, another filter was added on the 'Age (Years)/Sex' to remove the records for *Total*, *70 to 74* and *75 & over* because they were not used in the visualization. The age-groups *70 to 74* and *75 & over* are covered under the age-group *70 & over* the original data set hence the former were excluded. The detailed steps are shown in *Fig. 9a * to *Fig 9d* below.
 
-![*Fig. 9a: Adding another filter*](images/image13.jpg){width=70%}
+![*Fig. 9a: Adding another filter*](images/image13.jpg){width=50%}
 
 ![*Fig. 9b: Choosing the field 'Age(Years)/Sex'*](images/image14.jpg){width=50%}
 
@@ -226,11 +226,11 @@ After the 'Year' field was filtered, another filter was added on the 'Age (Years
 **Step 10:**
 The data type of the 'LFPR(%)' is incorrectly recorded as string type (indicated as *Abc* in the column header), it was changed by clicking on the data type tab and selecting the *Number(decimal)* option from the drop-down menu.
 
-![*Fig. 10: The prepared data set*](images/image18.jpg){width=70%}
+![*Fig. 10: The prepared data set*](images/image18.jpg){width=60%}
 
 The prepared data set looks as follows:
 
-![*Fig. 10: The prepared data set*](images/image17.jpg){width=50%}
+![*Fig. 10: The prepared data set*](images/image17.jpg){width=60%}
 
 
 
@@ -239,33 +239,33 @@ The prepared data set looks as follows:
 **Step 1:**
 Switch to Sheet 1 was done to start creating the visualization. Then the 'Year' field was dragged from the *Data * pane and dropped into the *Columns * tab as shown in *Fig. 11*.
 
-![*Fig. 11: Adding the 'Year' field*](images/image19.jpg){width=80%}
+![*Fig. 11: Adding the 'Year' field*](images/image19.jpg){width=70%}
 
 **Step 2:**
 Then the 'LFPR(%)' field was dragged from the *Data * pane and dropped into the *Rows * tab. Subsequently, the measure for it was selected as "SUM", this was done to aggregate the LFPR(%) values for all the age-groups first. 
 
-![*Fig. 12: Adding the 'SUM(LFPR(%))' *](images/image20.jpg){width=80%}
+![*Fig. 12: Adding the 'SUM(LFPR(%))' field*](images/image20.jpg){width=70%}
 
 
 **Step 3:**
 In this step, the 'Age Groups' field was dragged from the *Data * pane and dropped into the *Columns * tab. Merely placing the 'Age Groups' field next to the 'Year' field resulted in a different plot, then swapping their places resulted in the desired plot shown in *Fig. 13*.
 
-![*Fig. 13: Adding the 'Age Groups' field*](images/image22.jpg){width=80%}
+![*Fig. 13: Adding the 'Age Groups' field*](images/image22.jpg){width=70%}
 
 **Step 4:**
 Then the chart fit was changed from *Standard* to *Entire View*, which transforms the chart to fit the chart area. 
 
-![*Fig. 14: Changing the chart view*](images/image23.jpg){width=80%}
+![*Fig. 14: Changing the chart view*](images/image23.jpg){width=70%}
 
 **Step 5:**
 Then points were added to the line charts by selected the appropriate marker from *Markers* under the *Color* Mark in the *Marks* pane as shown in *Fig. 15*.
 
-![*Fig. 15: Adding markers to the line plots*](images/image24.jpg){width=70%}
+![*Fig. 15: Adding markers to the line plots*](images/image24.jpg){width=50%}
 
 **Step 6:**
 In this step, the y-axis label and tick marks were edited. First, the y-axis label tab was right-clicked and *Edit Axis * option was chosen, then the label name and tick options were changed. The detailed steps are shown in *Fig 16a * and *Fig 16b*.  
 
-![*Fig. 16a: Editing the y-axis*](images/image25.jpg){width=50%}
+![*Fig. 16a: Editing the y-axis*](images/image25.jpg){width=30%}
 
 ![*Fig. 16b: Changing the label name and tick options for y-axis*](images/image26.jpg){width=70%}
 
@@ -287,19 +287,19 @@ The chart title and sub-title were added by double-clicking on *Sheet 1*.
 **Step 10:**
 In this step, annotations were added to the chart by right-clicking on the chart and selecting the annotations. Two annotation options were used in the plot - *area* and *point*. The *area* annotation allows addition of text anywhere in the chart and the *point* annotation allows to point to any point on the plot. The created annotations were formatted using the options that appear on right-clicking the annotations. The detailed steps are shown below.
 
-![*Fig. 20a: Addting annotations*](images/image28.jpg){width=50%}
+![*Fig. 20a: Addting annotations*](images/image28.jpg){width=40%}
 
 ![*Fig. 20b: Change the text and text style of annotations*](images/image31.jpg){width=50%}
 
 
-![*Fig. 20c: Format the annotations*](images/image32.jpg){width=40%}
+![*Fig. 20c: Format the annotations*](images/image32.jpg){width=30%}
 
-![*Fig. 20d: Format options choosen for annotations*](images/image33.jpg){width=40%}
+![*Fig. 20d: Format options choosen for annotations*](images/image33.jpg){width=30%}
 
 
 The final visualization can be found in my Tableau account using this [tableau link](https://public.tableau.com/app/profile/karishma.yadav2567/viz/LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021/Sheet1?publish=yes). 
 
-![*Fig. 21: Dataviz Makeover*](images/final_dv.png){width=125%}
+![*Fig. 21: Dataviz Makeover*](images/final_dv.png){width=120%}
 
 ## 4.4 Major Observations from the data visualization:
 

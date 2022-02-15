@@ -1,0 +1,1263 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='LabourForceParticipationRatesLFPRofSingaporeResidentsbyAgeGroupsovertheyears2010to2021' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='clean' />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='mrsd_Res_LFPR_2 (mrsd_29_Res_LFPR_28Jan2022)' inline='true' name='federated.0b09t9b1iwkhuh14tuv3o1q8qqch' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mrsd_29_Res_LFPR_28Jan2022' name='excel-direct.1yj8rl40x1ajnv1d6iraw0vcvx3f'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Karishma1109/VA/Dataviz_Makeovers/Dataviz_Makeover_1/data/mrsd_29_Res_LFPR_28Jan2022.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[1991]' />
+            <value name='[1992]' />
+            <value name='[1993]' />
+            <value name='[1994]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[1999]' />
+            <value name='[2000]' />
+            <value name='[2001]' />
+            <value name='[2002]' />
+            <value name='[2003]' />
+            <value name='[2004]' />
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2007a]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[2011]' />
+            <value name='[2012]' />
+            <value name='[2013]' />
+            <value name='[2014]' />
+            <value name='[2015]' />
+            <value name='[2016]' />
+            <value name='[2017]' />
+            <value name='[2018]' />
+            <value name='[2019]' />
+            <value name='[2020]' />
+            <value name='[2021]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[mrsd_Res_LFPR_2].[1991]' />
+              <field name='[mrsd_Res_LFPR_2].[1992]' />
+              <field name='[mrsd_Res_LFPR_2].[1993]' />
+              <field name='[mrsd_Res_LFPR_2].[1994]' />
+              <field name='[mrsd_Res_LFPR_2].[1995]' />
+              <field name='[mrsd_Res_LFPR_2].[1996]' />
+              <field name='[mrsd_Res_LFPR_2].[1997]' />
+              <field name='[mrsd_Res_LFPR_2].[1998]' />
+              <field name='[mrsd_Res_LFPR_2].[1999]' />
+              <field name='[mrsd_Res_LFPR_2].[2000]' />
+              <field name='[mrsd_Res_LFPR_2].[2001]' />
+              <field name='[mrsd_Res_LFPR_2].[2002]' />
+              <field name='[mrsd_Res_LFPR_2].[2003]' />
+              <field name='[mrsd_Res_LFPR_2].[2004]' />
+              <field name='[mrsd_Res_LFPR_2].[2005]' />
+              <field name='[mrsd_Res_LFPR_2].[2006]' />
+              <field name='[mrsd_Res_LFPR_2].[2007]' />
+              <field name='[mrsd_Res_LFPR_2].[2007a]' />
+              <field name='[mrsd_Res_LFPR_2].[2008]' />
+              <field name='[mrsd_Res_LFPR_2].[2009]' />
+              <field name='[mrsd_Res_LFPR_2].[2010]' />
+              <field name='[mrsd_Res_LFPR_2].[2011]' />
+              <field name='[mrsd_Res_LFPR_2].[2012]' />
+              <field name='[mrsd_Res_LFPR_2].[2013]' />
+              <field name='[mrsd_Res_LFPR_2].[2014]' />
+              <field name='[mrsd_Res_LFPR_2].[2015]' />
+              <field name='[mrsd_Res_LFPR_2].[2016]' />
+              <field name='[mrsd_Res_LFPR_2].[2017]' />
+              <field name='[mrsd_Res_LFPR_2].[2018]' />
+              <field name='[mrsd_Res_LFPR_2].[2019]' />
+              <field name='[mrsd_Res_LFPR_2].[2020]' />
+              <field name='[mrsd_Res_LFPR_2].[2021]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1yj8rl40x1ajnv1d6iraw0vcvx3f' name='mrsd_Res_LFPR_2' table='[mrsd_Res_LFPR_2$]' type='table'>
+            <columns gridOrigin='A1:AG18:no:A1:AG18:1' header='no' lost='0' outcome='1' processed='435'>
+              <column datatype='string' name='Age (Years) / Sex' ordinal='0' />
+              <column datatype='real' name='1991' ordinal='1' />
+              <column datatype='real' name='1992' ordinal='2' />
+              <column datatype='real' name='1993' ordinal='3' />
+              <column datatype='real' name='1994' ordinal='4' />
+              <column datatype='string' name='1995' ordinal='5' />
+              <column datatype='real' name='1996' ordinal='6' />
+              <column datatype='real' name='1997' ordinal='7' />
+              <column datatype='real' name='1998' ordinal='8' />
+              <column datatype='real' name='1999' ordinal='9' />
+              <column datatype='string' name='2000' ordinal='10' />
+              <column datatype='real' name='2001' ordinal='11' />
+              <column datatype='real' name='2002' ordinal='12' />
+              <column datatype='real' name='2003' ordinal='13' />
+              <column datatype='real' name='2004' ordinal='14' />
+              <column datatype='string' name='2005' ordinal='15' />
+              <column datatype='real' name='2006' ordinal='16' />
+              <column datatype='real' name='2007' ordinal='17' />
+              <column datatype='real' name='2007a' ordinal='18' />
+              <column datatype='real' name='2008' ordinal='19' />
+              <column datatype='real' name='2009' ordinal='20' />
+              <column datatype='real' name='2010' ordinal='21' />
+              <column datatype='real' name='2011' ordinal='22' />
+              <column datatype='real' name='2012' ordinal='23' />
+              <column datatype='real' name='2013' ordinal='24' />
+              <column datatype='real' name='2014' ordinal='25' />
+              <column datatype='real' name='2015' ordinal='26' />
+              <column datatype='real' name='2016' ordinal='27' />
+              <column datatype='real' name='2017' ordinal='28' />
+              <column datatype='real' name='2018' ordinal='29' />
+              <column datatype='real' name='2019' ordinal='30' />
+              <column datatype='real' name='2020' ordinal='31' />
+              <column datatype='real' name='2021' ordinal='32' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[1991]' />
+            <value name='[1992]' />
+            <value name='[1993]' />
+            <value name='[1994]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[1999]' />
+            <value name='[2000]' />
+            <value name='[2001]' />
+            <value name='[2002]' />
+            <value name='[2003]' />
+            <value name='[2004]' />
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2007a]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[2011]' />
+            <value name='[2012]' />
+            <value name='[2013]' />
+            <value name='[2014]' />
+            <value name='[2015]' />
+            <value name='[2016]' />
+            <value name='[2017]' />
+            <value name='[2018]' />
+            <value name='[2019]' />
+            <value name='[2020]' />
+            <value name='[2021]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[mrsd_Res_LFPR_2].[1991]' />
+              <field name='[mrsd_Res_LFPR_2].[1992]' />
+              <field name='[mrsd_Res_LFPR_2].[1993]' />
+              <field name='[mrsd_Res_LFPR_2].[1994]' />
+              <field name='[mrsd_Res_LFPR_2].[1995]' />
+              <field name='[mrsd_Res_LFPR_2].[1996]' />
+              <field name='[mrsd_Res_LFPR_2].[1997]' />
+              <field name='[mrsd_Res_LFPR_2].[1998]' />
+              <field name='[mrsd_Res_LFPR_2].[1999]' />
+              <field name='[mrsd_Res_LFPR_2].[2000]' />
+              <field name='[mrsd_Res_LFPR_2].[2001]' />
+              <field name='[mrsd_Res_LFPR_2].[2002]' />
+              <field name='[mrsd_Res_LFPR_2].[2003]' />
+              <field name='[mrsd_Res_LFPR_2].[2004]' />
+              <field name='[mrsd_Res_LFPR_2].[2005]' />
+              <field name='[mrsd_Res_LFPR_2].[2006]' />
+              <field name='[mrsd_Res_LFPR_2].[2007]' />
+              <field name='[mrsd_Res_LFPR_2].[2007a]' />
+              <field name='[mrsd_Res_LFPR_2].[2008]' />
+              <field name='[mrsd_Res_LFPR_2].[2009]' />
+              <field name='[mrsd_Res_LFPR_2].[2010]' />
+              <field name='[mrsd_Res_LFPR_2].[2011]' />
+              <field name='[mrsd_Res_LFPR_2].[2012]' />
+              <field name='[mrsd_Res_LFPR_2].[2013]' />
+              <field name='[mrsd_Res_LFPR_2].[2014]' />
+              <field name='[mrsd_Res_LFPR_2].[2015]' />
+              <field name='[mrsd_Res_LFPR_2].[2016]' />
+              <field name='[mrsd_Res_LFPR_2].[2017]' />
+              <field name='[mrsd_Res_LFPR_2].[2018]' />
+              <field name='[mrsd_Res_LFPR_2].[2019]' />
+              <field name='[mrsd_Res_LFPR_2].[2020]' />
+              <field name='[mrsd_Res_LFPR_2].[2021]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1yj8rl40x1ajnv1d6iraw0vcvx3f' name='mrsd_Res_LFPR_2' table='[mrsd_Res_LFPR_2$]' type='table'>
+            <columns gridOrigin='A1:AG18:no:A1:AG18:1' header='no' lost='0' outcome='1' processed='435'>
+              <column datatype='string' name='Age (Years) / Sex' ordinal='0' />
+              <column datatype='real' name='1991' ordinal='1' />
+              <column datatype='real' name='1992' ordinal='2' />
+              <column datatype='real' name='1993' ordinal='3' />
+              <column datatype='real' name='1994' ordinal='4' />
+              <column datatype='string' name='1995' ordinal='5' />
+              <column datatype='real' name='1996' ordinal='6' />
+              <column datatype='real' name='1997' ordinal='7' />
+              <column datatype='real' name='1998' ordinal='8' />
+              <column datatype='real' name='1999' ordinal='9' />
+              <column datatype='string' name='2000' ordinal='10' />
+              <column datatype='real' name='2001' ordinal='11' />
+              <column datatype='real' name='2002' ordinal='12' />
+              <column datatype='real' name='2003' ordinal='13' />
+              <column datatype='real' name='2004' ordinal='14' />
+              <column datatype='string' name='2005' ordinal='15' />
+              <column datatype='real' name='2006' ordinal='16' />
+              <column datatype='real' name='2007' ordinal='17' />
+              <column datatype='real' name='2007a' ordinal='18' />
+              <column datatype='real' name='2008' ordinal='19' />
+              <column datatype='real' name='2009' ordinal='20' />
+              <column datatype='real' name='2010' ordinal='21' />
+              <column datatype='real' name='2011' ordinal='22' />
+              <column datatype='real' name='2012' ordinal='23' />
+              <column datatype='real' name='2013' ordinal='24' />
+              <column datatype='real' name='2014' ordinal='25' />
+              <column datatype='real' name='2015' ordinal='26' />
+              <column datatype='real' name='2016' ordinal='27' />
+              <column datatype='real' name='2017' ordinal='28' />
+              <column datatype='real' name='2018' ordinal='29' />
+              <column datatype='real' name='2019' ordinal='30' />
+              <column datatype='real' name='2020' ordinal='31' />
+              <column datatype='real' name='2021' ordinal='32' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mrsd_Res_LFPR_2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AG18:no:A1:AG18:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>435</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age (Years) / Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Age (Years) / Sex]</local-name>
+            <parent-name>[mrsd_Res_LFPR_2]</parent-name>
+            <remote-alias>Age (Years) / Sex</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Groups' datatype='string' name='[Age (Years) / Sex]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='LFPR(%)' datatype='real' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='mrsd_Res_LFPR_2' datatype='table' name='[__tableau_internal_object_id__].[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Karishma1109/VA/Dataviz_Makeovers/Dataviz_Makeover_1/data/mrsd_Res_LFPR_2 (mrsd_29_Res_LFPR_28Jan2022).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/13/2022 02:45:49 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='mrsd_Res_LFPR_2 (mrsd_29_Res_LFPR_28Jan2022)' increment-value='%null%' refresh-type='create' rows-inserted='144' timestamp-start='2022-02-13 14:45:48.738' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age (Years) / Sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age (Years) / Sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age (Years) / Sex</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mrsd_Res_LFPR_2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RSG_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>123</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[Age (Years) / Sex]' filter-group='2'>
+          <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+            <groupfilter function='level-members' level='[Age (Years) / Sex]' />
+            <groupfilter function='union'>
+              <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;70 to 74&quot;' />
+              <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;75 &amp; Over&quot;' />
+              <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;Total&quot;' />
+            </groupfilter>
+          </groupfilter>
+        </filter>
+        <filter class='categorical' column='[Pivot Field Names]' filter-group='2'>
+          <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+            <groupfilter function='level-members' level='[Pivot Field Names]' />
+            <groupfilter from='&quot;1991&quot;' function='range' level='[Pivot Field Names]' to='&quot;2009&quot;' />
+          </groupfilter>
+        </filter>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[Age (Years) / Sex]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Age (Years) / Sex]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;70 to 74&quot;' />
+            <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;75 &amp; Over&quot;' />
+            <groupfilter function='member' level='[Age (Years) / Sex]' member='&quot;Total&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Pivot Field Names]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Pivot Field Names]' />
+          <groupfilter from='&quot;1991&quot;' function='range' level='[Pivot Field Names]' to='&quot;2009&quot;' />
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mrsd_Res_LFPR_2' id='mrsd!Res!LFPR!2_3DB0E61CAC8840CF9DEF9CB369E29E59'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[1991]' />
+                  <value name='[1992]' />
+                  <value name='[1993]' />
+                  <value name='[1994]' />
+                  <value name='[1995]' />
+                  <value name='[1996]' />
+                  <value name='[1997]' />
+                  <value name='[1998]' />
+                  <value name='[1999]' />
+                  <value name='[2000]' />
+                  <value name='[2001]' />
+                  <value name='[2002]' />
+                  <value name='[2003]' />
+                  <value name='[2004]' />
+                  <value name='[2005]' />
+                  <value name='[2006]' />
+                  <value name='[2007]' />
+                  <value name='[2007a]' />
+                  <value name='[2008]' />
+                  <value name='[2009]' />
+                  <value name='[2010]' />
+                  <value name='[2011]' />
+                  <value name='[2012]' />
+                  <value name='[2013]' />
+                  <value name='[2014]' />
+                  <value name='[2015]' />
+                  <value name='[2016]' />
+                  <value name='[2017]' />
+                  <value name='[2018]' />
+                  <value name='[2019]' />
+                  <value name='[2020]' />
+                  <value name='[2021]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[mrsd_Res_LFPR_2].[1991]' />
+                    <field name='[mrsd_Res_LFPR_2].[1992]' />
+                    <field name='[mrsd_Res_LFPR_2].[1993]' />
+                    <field name='[mrsd_Res_LFPR_2].[1994]' />
+                    <field name='[mrsd_Res_LFPR_2].[1995]' />
+                    <field name='[mrsd_Res_LFPR_2].[1996]' />
+                    <field name='[mrsd_Res_LFPR_2].[1997]' />
+                    <field name='[mrsd_Res_LFPR_2].[1998]' />
+                    <field name='[mrsd_Res_LFPR_2].[1999]' />
+                    <field name='[mrsd_Res_LFPR_2].[2000]' />
+                    <field name='[mrsd_Res_LFPR_2].[2001]' />
+                    <field name='[mrsd_Res_LFPR_2].[2002]' />
+                    <field name='[mrsd_Res_LFPR_2].[2003]' />
+                    <field name='[mrsd_Res_LFPR_2].[2004]' />
+                    <field name='[mrsd_Res_LFPR_2].[2005]' />
+                    <field name='[mrsd_Res_LFPR_2].[2006]' />
+                    <field name='[mrsd_Res_LFPR_2].[2007]' />
+                    <field name='[mrsd_Res_LFPR_2].[2007a]' />
+                    <field name='[mrsd_Res_LFPR_2].[2008]' />
+                    <field name='[mrsd_Res_LFPR_2].[2009]' />
+                    <field name='[mrsd_Res_LFPR_2].[2010]' />
+                    <field name='[mrsd_Res_LFPR_2].[2011]' />
+                    <field name='[mrsd_Res_LFPR_2].[2012]' />
+                    <field name='[mrsd_Res_LFPR_2].[2013]' />
+                    <field name='[mrsd_Res_LFPR_2].[2014]' />
+                    <field name='[mrsd_Res_LFPR_2].[2015]' />
+                    <field name='[mrsd_Res_LFPR_2].[2016]' />
+                    <field name='[mrsd_Res_LFPR_2].[2017]' />
+                    <field name='[mrsd_Res_LFPR_2].[2018]' />
+                    <field name='[mrsd_Res_LFPR_2].[2019]' />
+                    <field name='[mrsd_Res_LFPR_2].[2020]' />
+                    <field name='[mrsd_Res_LFPR_2].[2021]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.1yj8rl40x1ajnv1d6iraw0vcvx3f' name='mrsd_Res_LFPR_2' table='[mrsd_Res_LFPR_2$]' type='table'>
+                  <columns gridOrigin='A1:AG18:no:A1:AG18:1' header='no' lost='0' outcome='1' processed='435'>
+                    <column datatype='string' name='Age (Years) / Sex' ordinal='0' />
+                    <column datatype='real' name='1991' ordinal='1' />
+                    <column datatype='real' name='1992' ordinal='2' />
+                    <column datatype='real' name='1993' ordinal='3' />
+                    <column datatype='real' name='1994' ordinal='4' />
+                    <column datatype='string' name='1995' ordinal='5' />
+                    <column datatype='real' name='1996' ordinal='6' />
+                    <column datatype='real' name='1997' ordinal='7' />
+                    <column datatype='real' name='1998' ordinal='8' />
+                    <column datatype='real' name='1999' ordinal='9' />
+                    <column datatype='string' name='2000' ordinal='10' />
+                    <column datatype='real' name='2001' ordinal='11' />
+                    <column datatype='real' name='2002' ordinal='12' />
+                    <column datatype='real' name='2003' ordinal='13' />
+                    <column datatype='real' name='2004' ordinal='14' />
+                    <column datatype='string' name='2005' ordinal='15' />
+                    <column datatype='real' name='2006' ordinal='16' />
+                    <column datatype='real' name='2007' ordinal='17' />
+                    <column datatype='real' name='2007a' ordinal='18' />
+                    <column datatype='real' name='2008' ordinal='19' />
+                    <column datatype='real' name='2009' ordinal='20' />
+                    <column datatype='real' name='2010' ordinal='21' />
+                    <column datatype='real' name='2011' ordinal='22' />
+                    <column datatype='real' name='2012' ordinal='23' />
+                    <column datatype='real' name='2013' ordinal='24' />
+                    <column datatype='real' name='2014' ordinal='25' />
+                    <column datatype='real' name='2015' ordinal='26' />
+                    <column datatype='real' name='2016' ordinal='27' />
+                    <column datatype='real' name='2017' ordinal='28' />
+                    <column datatype='real' name='2018' ordinal='29' />
+                    <column datatype='real' name='2019' ordinal='30' />
+                    <column datatype='real' name='2020' ordinal='31' />
+                    <column datatype='real' name='2021' ordinal='32' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='false' fontname='Calibri'>Labour Force Participation Rates (LFPR) of Singapore Residents by Age Groups over the Years 2010 to 2021</run>
+            <run>Æ&#10;</run>
+            <run bold='false' fontname='Calibri' fontsize='10'>Increasing LFPR across the 55 &amp; over age-group for 2010 to 2021</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>Source: </run>
+            <run auto-url='true' fontcolor='#000000' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif' hyperlink='tabdoc:load-url url=&amp;quot;Statistical Table: Labour Force, Ministry of Manpower, Singapore&amp;quot;'>Statistical Table: Labour Force, Ministry of Manpower, Singapore</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mrsd_Res_LFPR_2 (mrsd_29_Res_LFPR_28Jan2022)' name='federated.0b09t9b1iwkhuh14tuv3o1q8qqch' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b09t9b1iwkhuh14tuv3o1q8qqch'>
+            <column caption='Age Groups' datatype='string' name='[Age (Years) / Sex]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='LFPR(%)' datatype='real' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[Age (Years) / Sex]' derivation='None' name='[none:Age (Years) / Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]' scope='rows' value='LFPR(%)' />
+            <encoding attr='space' class='0' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]' field-type='quantitative' major-origin='0.0' major-spacing='10.0' max='100.0' min='0.0' minor-origin='0.0' minor-spacing='1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='height' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]' value='30' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#0000003e' />
+            <format attr='tick-color' scope='cols' value='#898989' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+            <format attr='border-width' scope='cols' value='1' />
+            <format attr='border-style' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]' value='normal' />
+            <format attr='font-family' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]' value='Calibri' />
+            <format attr='color' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]' value='#666666' />
+            <format attr='font-size' field='[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]' value='4' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' scope='cols' value='1' />
+            <format attr='border-style' scope='cols' value='dotted' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#f0f0f0' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_8' value='none' />
+            <format attr='body-type' id='annotation_10' value='none' />
+            <format attr='body-type' id='annotation_12' value='none' />
+            <format attr='body-type' id='annotation_15' value='none' />
+            <format attr='body-type' id='annotation_17' value='none' />
+            <format attr='stroke-color' id='annotation_17' value='#b4b4b4' />
+            <format attr='line-visibility' id='annotation_17' value='on' />
+            <format attr='line-pattern-only' id='annotation_17' value='dashed' />
+            <format attr='body-type' id='annotation_18' value='none' />
+            <format attr='line-visibility' id='annotation_18' value='on' />
+            <format attr='line-pattern-only' id='annotation_18' value='dashed' />
+            <format attr='stroke-color' id='annotation_18' value='#c0c0c0' />
+            <format attr='line-end' id='annotation_18' value='open-arrow' />
+            <format attr='line-end' id='annotation_17' value='open-arrow' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.22988949716091156' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</rows>
+        <cols>([federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk] / [federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk])</cols>
+        <annotations>
+          <annotation class='area' id='8' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#555555' fontname='Calibri' fontsize='6'>The LFPR(%) among age-groups 25 to 29 is almost steady between 2015 to 2021</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.106509'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;25 to 29&quot;</bucket>
+                      <bucket>&quot;2010&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='82.672233820459297'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.609467'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;25 to 29&quot;</bucket>
+                      <bucket>&quot;2021&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='65.970772442588725'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='10' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#555555' fontname='Calibri' fontsize='6'>The LFPR(%) fell for these age-groups 15 to 24 in 2020</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#555555' fontname='Calibri' fontsize='6'> coinicding with COVID-19</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.923077'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;15 to 19&quot;</bucket>
+                      <bucket>&quot;2016&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='42.379958246346561'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.745562'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;25 to 29&quot;</bucket>
+                      <bucket>&quot;2010&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='28.810020876826727'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='12' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#555555' fontname='Calibri' fontsize='6'>The LFPR(%) is rising with small rate but consistenly for age-groups 30 to 54</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.840236'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;30 to 34&quot;</bucket>
+                      <bucket>&quot;2018&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='76.82672233820459'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.301775'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;50 to 54&quot;</bucket>
+                      <bucket>&quot;2013&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='62.004175365344459'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='15' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#555555' fontname='Calibri' fontsize='6'>The LFPR(%) is comparatively rising sharply for the age-groups 55 onwards</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.834319'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;55 to 59&quot;</bucket>
+                      <bucket>&quot;2013&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='32.150313152400834'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.757396'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;70 &amp; Over&quot;</bucket>
+                      <bucket>&quot;2020&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='11.273486430062629'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='point' id='17' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.544378'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;20 to 24&quot;</bucket>
+                      <bucket>&quot;2020&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='56.158663883089766'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-38' y='67' />
+          </annotation>
+          <annotation class='point' id='18' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text />
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.863905'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+                      <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;15 to 19&quot;</bucket>
+                      <bucket>&quot;2020&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='13.361169102296454'>
+                  <node-reference>
+                    <axis>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[sum:Pivot Field Values:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='49' y='-82' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{F794DED9-EC8C-4864-8DE0-3AC02D0C4502}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='142'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='56'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Age (Years) / Sex:nk]</field>
+            <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Names:nk]</field>
+            <field>[federated.0b09t9b1iwkhuh14tuv3o1q8qqch].[none:Pivot Field Values:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{66597DC3-7E17-4FDA-9A64-A838F0DCA6F1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      ZDIIIdDpdGQyGU3eNxgMmsKr1+u1lzMXOagoCqqqap/NZDIYjUYGBgYwGAxEo1EAOjo6WFxc
+      pLCwULPVZ7NZurq6KC0txWazEQgEOHnyJPPz85SWlmphDb29vayuruJyuVhcXKS+vp7h4WEa
+      GxsZGxvjlVdewe12a2Mnsw9F5jilfLjJqc7ngTt37tDT00NdXR1+vx+TyYTP5+P1118nGo0y
+      Pj5OcXExZrOZRCJBPB6ntLQUu93O3NyctmspisKlS5eoqalhbGwMvV7P8vIymUyGO3fu4PF4
+      WFxcxG63c/78edrb25mYmGBlZQWj0YiqqkxPT/P555/jcrl49913aWtr48qVK0QiEcrLyykq
+      KsJms7GwsMDRo0fxer3aBJDZRAtyR4PuSHHcncJei0DLy8sUFRVp1hW3283Fixdpb2/HZrNp
+      L3xLS4tmtclkMoyPj2t/l5SUsLi4iBCCmZkZZmZmcDqdpFIpstksZWVlmvVIURTS6TQff/wx
+      drudbDbLzMyMxqe6uprCwkJUVeX3v/89ZrOZWCzG5OQkIyMjrKysoNfruXfvHg6HQ7tO9jgq
+      mbnlUxfohVGC0+k02WyWGzdukEqluHTpEtlsFrPZzMjICKOjo3R2dlJaWkomk9HafWazWcbH
+      x6mpqcFisaCqKkajkXQ6jaqqmlyZW91VVdVMozqdjkQigV6v187rdLoN1gidTkcqlUIIoYll
+      uclnMplIp9OYzWZNcRNCEIvFpA05jkajUnOz2WzbUoJ3ZQIATExMbOp+uB/IKaU5U2RutQ+F
+      Qrhcrg3nt3KP3UauiK6slpbV1dUtlXjcDwSDQZxO5975AZ6E/dzGhRCaPB6NRnE4HCwtLWGz
+      2TCbzSwvL+NyuYjFYqRSKUZHRykvL9c6oGezWdLpNB6Ph0Qioa3mCwsLxGIx4vE4hw4dory8
+      HL/fT29vL5WVlczPz5PJZHC5XHR2dnL79m1MJhMzMzM4HA4uXLiAXq/no48+4s033+TKlSuU
+      lZVx6tSpDfwPyqLkD2msQLB/4dCJRIKenh7tBV5dXcVsNmt1+S0Wi/bSLy4uEovFSKfThEIh
+      zGYzyWQSvV7Pe++9x/Xr14lGo9pqvLq6isViYXBwEIPBwNTUFGfPniUQCHDkyBFUVWVlZYWb
+      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
+      ayBQe+8AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
