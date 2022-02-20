@@ -178,11 +178,11 @@ The above correlation plot shows that the field "Portion(oz)" is not correlated 
 
 ## 3.1 Proposed Heatmap
 
-![Proposed Heatmap for the Kids Drink Types by Nutritional Factors](sketch1.jpeg){width = 0.6}
+![Proposed Heatmap for the Kids Drink Types by Nutritional Factors](sketch1.jpeg){width=60%}
 
 ## 3.2 Proposed Parallel Coordinate Plots
 
-![Proposed Multiple Parallel Coordinate plots for the Kids Drink clusters by Nutritional Factors](sketch2.jpeg){width = 0.7}
+![Proposed Multiple Parallel Coordinate plots for the Kids Drink clusters by Nutritional Factors](sketch2.jpeg){width=70%}
 
 # 4. Interactive Heatmap
 
