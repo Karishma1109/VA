@@ -13,6 +13,8 @@ navbar:
         theme: "thex01.css"
       - text: "Exercise 2"
         href: "TH_Exercise/TH_Ex02/TakeHome_Ex02.html"
+      - text: "Exercise 3"
+        href: "TH_Exercise/TH_Ex03/TakeHome_Ex03.html"
     - text: "DataViz Makeover"
       menu:
       - text: "DataViz 1"
