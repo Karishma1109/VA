@@ -284,15 +284,14 @@ kids_drinks_clusters$cluster = as.factor(kids_drinks_clusters$cluster)
 ### 5.2 The Multiple Parallel Coordinate Plot
 *ggparcoord()* is function from the "GGally" package in R, for plotting static parallel coordinate plots, utilizing the ggplot2 graphics package. Here, we use the "kids_drinks_clusters" data set, use nutrition factor fields to to be axes in the plot, "cluster" field is used to group(color) by, "scale" is set to "uniminmax" to univariately scale so the minimum of the variable is zero, and the maximum is one and facet wrap is done on the "cluster" field to see the values of the nutrition factors in each of the clusters.
 
-```{r, echo = TRUE, fig.height = 10,fig.width = 15, warning = FALSE, message = FALSE}
+```{r, echo = TRUE, fig.height = 18,fig.width = 22, warning = FALSE, message = FALSE}
 ggparcoord(data = kids_drinks_clusters, 
            columns = c(2:13), 
            groupColumn = 14,
            scale = "uniminmax",
            alphaLines = 0.2,
            boxplot = TRUE, 
-           title = "Multiple Parallel Coordinates Plots of Kids Drinks 
-           Types clusters at Starbucks by Nutrition Factors
+           title = "Multiple Parallel Coordinates Plots of Kids Drinks Types clusters by Nutrition Factors
            \nThe 10 clusters have different nutrition values") +
   facet_wrap(~cluster) + 
   theme(axis.text.x = element_text(angle = 30, hjust=1))
