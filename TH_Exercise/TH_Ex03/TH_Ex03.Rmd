@@ -108,7 +108,6 @@ row.names(kids) <- kids$Kids_drinks
 kidsdrinks_matrix <- data.matrix(kids)
 wh_d <- dist(kidsdrinks_matrix[,-c(1)], method = "euclidean")
 dend_expend(wh_d)[[3]]
-
 ```
 ```{r}
 kidsdrinks_clust <- hclust(wh_d, method = "average")

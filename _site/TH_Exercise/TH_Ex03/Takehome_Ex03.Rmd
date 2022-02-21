@@ -1,5 +1,5 @@
 ---
-title: "Take Home Exercise 3: Segmenting Starbucks Drinks using Visual Analytics"
+title: "Take-Home Exercise 3: Segmentation of Kids Drinks at Starbucks by Nutritional Factors"
 description: |
   This is the third take home exercise in the series of take home exercises for the module *Visual Analytics*. This exercise uses multivariate analysis techniques to segment Starbucks drinks in the category *'Kids drinks and others'* based on Nutrition factors given in the data set *starbucks_drinks.csv*.
 author:
@@ -15,7 +15,7 @@ output:
     theme: TH_Ex03.css
     toc_float: true
     toc_collapsed: true
-    toc_depth: 2
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -58,7 +58,7 @@ for(p in packages)
 
 # 2. Data Preparation
 
-## 2.1 Importing the data set
+### 2.1 Importing the data set
 The given task: Create a data visualization to segment kid drinks and other by nutrition indicators. For the purpose of this task, *starbucks_drink.csv* should be used.
 
 For the purpose of this task, the data set was downloaded from the course e-learn platform and saved to the exercise folder in the course project repository. The following code chunk was used to load the data set into R.
@@ -85,7 +85,7 @@ The *as.numeric()* function is used to change the data type of the "Caffeine(mg)
 starbucks_drinks["Caffeine(mg)"] <- as.numeric(starbucks_drinks$`Caffeine(mg)`)
 class(starbucks_drinks$`Caffeine(mg)`)
 ```
-## 2.2 Subsetting the data set on Category
+### 2.2 Subsetting the data set on Category
 
 Now, for the purpose of the given task, the *starbucks_drinks* data set needs to be filtered on the "Category" field where the field is equal to "kids-drinks-and-other". *filter* function is used as follows to accomplish this step.
 
@@ -96,7 +96,7 @@ kids_drinks <- starbucks_drinks %>%
 
 The above paged table view also indicates that there are a few missing values in our data set, let us have a look at the missing values.
 
-## 2.3 Handling Missing values
+### 2.3 Handling Missing values
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 colSums(is.na(kids_drinks))
@@ -122,20 +122,21 @@ kids_drinks$`Whipped Cream`[is.na(kids_drinks$`Whipped Cream`)] <- 'No Whipped C
 
 Let us look at the summary of the data set *starbucks_drinks* to find out any discrepancies or outliers in the data fields.
 
-## 2.4 Exploring the data set
+### 2.4 Exploring the data set
 
 ```{r layout="l-body-outset", echo = TRUE, warning = FALSE, message = FALSE}
 summary(kids_drinks[,3:15])
 ```
 The *summary()* function gives us the minimum, maximum, mean, median, 1st quartile and 3rd quartile values for each of the fields. The field "Caffeine(mg)" seems to have outliers as the maximum value is significantly greater than the 3rd quartile. Let us plot a boxplot for the field to confirm if there are outliers.
 
-## 2.5 Removing Outliers
+### 2.5 Removing Outliers
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 ggplot(kids_drinks, aes(y=`Caffeine(mg)`)) + 
   geom_boxplot(fill="gray") +
   scale_color_grey() + 
-  labs(title="Box plot of Caffeine(mg)", subtitle = "Caffeine(mg) has an outlier") + 
+  labs(title="Box plot of Caffeine(mg)",
+       subtitle = "Caffeine(mg) has an outlier") + 
   theme_classic()
 ```
 The box plot confirms that there is an outlier with value over 200 mg, while the rest of the data points have values less than 50 mg. The outlier was filtered away using the following piece of code.
@@ -152,7 +153,7 @@ sum(duplicated(kids_drinks))
 ```
 The *sum()* function is used to add the number of duplicate records returned by applying the *duplicated()* function on the data set. There are no duplicate records in the data set. 
 
-## 2.6 Correlation Matrix
+### 2.6 Correlation Matrix
 
 Moving on to segmentation of kids drinks and other category based on nutritional factors, we can see that there are fields "Names", "Milk", "Whipped Cream" and "Size"/"Portion(oz)" of the drink that affect the values of the nutritional factors. The field "Size" corresponds to "Portion(oz)". We need to combine these fields to get the drink type for this category. Let us look at the correlation plot of the numerical fields in the data to see if the field "Portion(oz)" is correlated with the rest of them. 
 A correlation analysis is done using the *ggcorrmat()* function of the *ggstatsplot* package at confidence level of 95%.
@@ -176,17 +177,17 @@ The above correlation plot shows that the field "Portion(oz)" is not correlated 
 
 # 3. Proposed Visualization
 
-## 3.1 Proposed Heatmap
+### 3.1 Proposed Heatmap
 
 ![Proposed Heatmap for the Kids Drink Types by Nutritional Factors](sketch1.jpeg){width=60%}
 
-## 3.2 Proposed Parallel Coordinate Plots
+### 3.2 Proposed Parallel Coordinate Plots
 
 ![Proposed Multiple Parallel Coordinate plots for the Kids Drink clusters by Nutritional Factors](sketch2.jpeg){width=70%}
 
 # 4. Interactive Heatmap
 
-## 4.1 Data Preparation
+### 4.1 Data Preparation
 
 Now, we need to create drink types using the fields "Names", "Milk", "Whipped Cream" and "Size". The *paste()* function is used to create a new field "kids_drink_type" as follows:
 
@@ -201,7 +202,7 @@ From the data set, relevant fields are selected using the *select()* function fr
 
 The correlation plot will only use numerical values, therefore row names are set for the matrix so that the resulting heat map is labelled as per the row names.
 
-## 4.2 Normalizing the data set
+### 4.2 Normalizing the data set
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 kids_starbucks <- dplyr::select(kids_drinks, c(19, 4:15))
@@ -209,7 +210,7 @@ kids_starbucks[, 2:13] <- normalize(kids_starbucks[, 2:13])
 row.names(kids_starbucks) <- kids_starbucks$kids_drink_type
 ```
 
-## 4.3 Heirarchical Clustering
+### 4.3 Heirarchical Clustering
 Hierarchical clustering^2^ is a general family of clustering algorithms that build nested clusters by merging or splitting them successively. This hierarchy of clusters is represented as a tree (or dendrogram). The root of the tree is the unique cluster that gathers all the samples, the leaves being the clusters with only one sample.
 The Agglomerative Clustering object performs a hierarchical clustering using a bottom up approach: each observation starts in its own cluster, and clusters are successively merged together. The linkage criteria determines the metric used for the merge strategy:
 
@@ -226,11 +227,12 @@ To find the best method of linkage during hierarchical clustering, the data set 
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 kids_drinks_matrix <- data.matrix(kids_starbucks)
-kdm_clust <- dist(kids_drinks_matrix[,-c(1)], method = "euclidean")
+kdm_clust <- dist(kids_drinks_matrix[,-c(1)],
+                  method = "euclidean")
 dend_expend(kdm_clust)[[3]]
 ```
 
-## 4.4 Average Silhouette Approach to find optimum number of clusters
+### 4.4 Average Silhouette Approach
 We see that the optim value is highest for the "average" linkage, therefore it was used to create the cluster heat map. Before plotting the heat map, let us first get the optimum number of clusters in our data set using the *find_k()* function. This uses the average silhouette approach. In short, the average silhouette approach measures the quality of a clustering. That is, it determines how well each object lies within its cluster. A high average silhouette width indicates a good clustering. The average silhouette method computes the average silhouette of observations for different values of k. The optimal number of clusters k is the one that maximizes the average silhouette over a range of possible values for k^4^.
 
 ```{r}
@@ -241,7 +243,7 @@ plot(num_cluster)
 
 The optimal number of clusters for this data set is found to be 10. 
 
-## 4.5 The Heat map visual
+### 4.5 The Heat map visual
 Therefore in the *heatmaply()* function below, we have put the argument "k_row" equals to 10. The argument "Colv" is set to "NA" because we are only segmenting the rows (kids drink types). **Euclidean distance** is used as for calculating the cluster distances and **average linkage** is used to find the most suitable cluster for each drink type as identified earlier. The "seriate" argument from the "seriation" package to find an optimal ordering of rows and columns. Optimal means to optimize the Hamiltonian path length that is restricted by the dendrogram structure. This, in other words, means to rotate the branches so that the sum of distances between each adjacent leaf (label) is minimized. Here, the argument is set to "GW" (Gruvaeus and Wainer) as it potentially leads to faster heuristics^5^.
 
 Plotting the cluster heat map:
@@ -254,16 +256,18 @@ heatmaply(kids_drinks_matrix[,-c(1)],
           hclust_method = "average",
           k_row = 10,
           fontsize_row = 2.5,
-          fontsize_col = 5,
+          fontsize_col = 7,
           colors = Reds,
           main="Kids Drinks Types at Starbucks by their nutritional value",
+          
           xlab = "Kids Drinks Type (Starbucks)",
+          
           ylab = "Nutritional Factors")%>% layout(height=800,width=600)
 ```
 
 # 5. Parallel Coordinate Plots
 
-## 5.1 Data Preparation
+### 5.1 Data Preparation
 Now let us save the clusters using the *cut_tree()* function which allows us to specify the number of clusters. Then the mutate function was used to assign clusters to the data set.
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
@@ -277,17 +281,19 @@ We can see that the cluster as class integer, we need to convert it to factor to
 kids_drinks_clusters$cluster = as.factor(kids_drinks_clusters$cluster)
 ```
 
-## 5.2 The Multiple Parallel Coordinate Plot
+### 5.2 The Multiple Parallel Coordinate Plot
 *ggparcoord()* is function from the "GGally" package in R, for plotting static parallel coordinate plots, utilizing the ggplot2 graphics package. Here, we use the "kids_drinks_clusters" data set, use nutrition factor fields to to be axes in the plot, "cluster" field is used to group(color) by, "scale" is set to "uniminmax" to univariately scale so the minimum of the variable is zero, and the maximum is one and facet wrap is done on the "cluster" field to see the values of the nutrition factors in each of the clusters.
 
-```{r, echo = TRUE, fig.height = 10,fig.width = 12, warning = FALSE, message = FALSE}
+```{r, echo = TRUE, fig.height = 10,fig.width = 15, warning = FALSE, message = FALSE}
 ggparcoord(data = kids_drinks_clusters, 
            columns = c(2:13), 
            groupColumn = 14,
            scale = "uniminmax",
            alphaLines = 0.2,
            boxplot = TRUE, 
-           title = "Multiple Parallel Coordinates Plots of Kids Drinks Types clusters at Starbucks by Nutrition Factors\nThe 10 clusters have different nutrition values") +
+           title = "Multiple Parallel Coordinates Plots of Kids Drinks 
+           Types clusters at Starbucks by Nutrition Factors
+           \nThe 10 clusters have different nutrition values") +
   facet_wrap(~cluster) + 
   theme(axis.text.x = element_text(angle = 30, hjust=1))
 ```

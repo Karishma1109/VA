@@ -15,11 +15,11 @@ navbar:
         href: "TH_Exercise/TH_Ex02/TakeHome_Ex02.html"
       - text: "Exercise 3"
         href: "TH_Exercise/TH_Ex03/TakeHome_Ex03.html"
-    - text: "DataViz Makeover"
+    - text: "DataViz Makeovers"
       menu:
-      - text: "DataViz 1"
+      - text: "Makeover 1"
         href: "Dataviz_Makeovers/Dataviz_Makeover_1/dataviz_makeover_01.html"
-      - text: "DataViz 2"
+      - text: "Makeover 2"
         href: Dataviz2.html
     - text: "About"
       href: about.html
