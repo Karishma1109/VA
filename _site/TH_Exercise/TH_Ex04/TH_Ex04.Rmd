@@ -1,5 +1,5 @@
 ---
-title: "Visualizing Time Series stock price data top 40 Companies"
+title: "Visualizing Time Series stock price data for top 40 Companies"
 description: |
   This is the fourth take home exercise in the series of take home exercises for the module *Visual Analytics*. This exercise uses horizon plot to plot timeseries of stock prices of top 40 companies by market capitalization. The stock prices are scraped using *Tidyquant* package in R.
 author:
