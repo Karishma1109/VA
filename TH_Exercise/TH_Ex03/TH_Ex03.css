@@ -28,10 +28,10 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.9);
   --fig-cap-color:   rgba(0, 0, 0, 0.9);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    "Amiri", serif;
-  --mono-font:       "DM Mono", monospace;
-  --body-font:       "Calibri", sans-serif;
-  --navbar-font:     "Amiri", serif;
+  --heading-font:    "Times New Roman", serif;
+  --mono-font:       "Times New Roman", monospace;
+  --body-font:       "Times New Roman", sans-serif;
+  --navbar-font:     "Times New Roman", serif;
 }
 
 /* More properties ... */
