@@ -131,7 +131,7 @@ The arguments used in the function are explained below:
 
 - *origin*: It represents the origin of the horizon plot. It can either be a string, namely "midpoint" (the default), "median", "mean", "min" or "quantiles", or a user-specified number. In our case, I have specified it as "quantiles" such that the origin of the plot is the median (median is used as the origin because the stock price data are skewed for the stocks) and the cut-points are quantile values.
 
-Then "facet_wrap()" function is used to get horizon plots for all the 40 companies by passing it "symbol" field as the argument. Apart from this, theme and labeling functions are used to provide details about the plot. 
+Then "facet_grid()" function is used to get horizon plots for all the 40 companies by passing it "symbol" field as the argument. Apart from this, theme and labeling functions are used to provide details about the plot. 
 
 The "scale_x_date" function is used to set the date labels on the x-axis. Here, the label is month year format, and 1 month interval is used to set the breaks.
 
