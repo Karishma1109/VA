@@ -55,7 +55,7 @@ for(p in packages)
 ## 2.1 Loading the Dataset
 
 To plot the stock prices of top 40 companies, the list of top companies by market capitalization was downloaded from this [link](https://companiesmarketcap.com/singapore/largest-companies-in-singapore-by-market-cap/) and saved as a *csv* file. 
-Subsequently, the *csv* file loaded into an R data frame "topcompanies" as shown in the code chunk below, using the "read_csv()" function from the "tidyverse" package. Then, using the *boolean masking* on the "topcompanies" data frame, "which()" function and condition that the "Rank"(ranks the companies based on their market capitalization) field from the data frame is less than 41, top 40 companies data was saved into another data frame "top40companies".
+Subsequently, the *csv* file was loaded into an R data frame "topcompanies" using the "read_csv()" function from the "tidyverse" package. Then, using *boolean masking* on the "topcompanies" data frame, "which()" function and condition that the "Rank"(ranks the companies based on their market capitalization) field from the data frame is less than 41, top 40 companies data filtered and was saved into another data frame "top40companies".
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 topcompanies <- read_csv("data/top40companies.csv")
