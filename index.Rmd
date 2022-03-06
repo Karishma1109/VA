@@ -13,3 +13,5 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 This website is built using the *distill* package in R. It is composed of my submissions for the **Visual Analytics** module taught by Professor **Kam Tin Seong** at the **Singapore Management University**. I hope you like my work!
+
+Yan Ru was here!
