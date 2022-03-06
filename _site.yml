@@ -23,6 +23,10 @@ navbar:
         href: "Dataviz_Makeovers/Dataviz_Makeover_1/dataviz_makeover_01.html"
       - text: "Makeover 2"
         href: Dataviz2.html
+    - text: "Group Project"
+      menu:
+      - text: "Proposal"
+        href: "Course_Project/Proposal/Proposal.html"
     - text: "About"
       href: about.html
     - icon: fab fa-github
