@@ -7,16 +7,15 @@ author:
     
     
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: TRUE
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+# Preparing the data required
+## Loading packages required for the data preparation    
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 packages = c('rmarkdown','tidyverse')
@@ -30,6 +29,10 @@ for(p in packages)
 }
 ```
 
+## Importing the data set 
+
+Data set from the [Singstat government website](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data) is used for this project. The downloaded file has 2 tabs with the Import and export data. Only the first 50 columns are imported from each tab, skipping the first 9 columns or writeup. 
+
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 imports <- read_csv("data/SGImports.csv", skip = 9)
 imports <- imports[,c(0:50)]
@@ -38,6 +41,10 @@ exports <- exports[,c(0:50)]
 
 ```
 
+## Transforming the data set
+
+To convert the 2 data sets into a usable format, the columns of the data which contained the month and year, was pivoted into long format / column. 
+
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 imports1 <- pivot_longer(
   imports,
@@ -45,8 +52,10 @@ imports1 <- pivot_longer(
   names_to = "Time",
   values_to = "Imports"
 )
-view(imports1)
+
+head(imports1,3)
 ```
+
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 exports1 <- pivot_longer(
   exports,
@@ -54,21 +63,32 @@ exports1 <- pivot_longer(
   names_to = "Time",
   values_to = "Exports"
 )
+head(exports1,3)
 ```
+
+## Exploring the data after transformation
+
+Taking the data on trading partner Malaysia as sample, we filter out the Import values from the original data set.
+
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 imports2 <- imports1%>%
   filter(`Data Series`=="Malaysia (Thousand Dollars)")
 imports2 <- imports2[order(as.Date(imports2$Time, format="%Y%m")),]
-view(imports2)
+
+glimpse(imports2)
+
 ```
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+
+Next we plot out a line chart to display the Import values across the time period of the data.
+
+```{r, fig.width = 10, fig.height = 5, echo = TRUE, warning = FALSE, message = FALSE}
 ggplot(data=imports2, 
        aes( x= Time, y= Imports, group=1)) +
   geom_line(stat = "identity",
   position = "identity") + geom_point() +
   
   labs(title = "Imports from Malaysia into Singapore for the period Jan 2018 to Jan 2022", 
-                     subtitle = "Noticable Fall in imports during", 
+  subtitle = "Noticable Fall in imports in the month of Feb every year", 
                      x = 'Time', 
                      y ='Import (Thousand Dollars)')+
   theme_bw()+ 
