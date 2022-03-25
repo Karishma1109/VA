@@ -1,0 +1,23 @@
+---
+title: "Take Home Exercise 2: Interactive Data Visualizations in R"
+description: |
+  This is the second take home exercise in a series of home exercises for the *Visual Analytics and Applications* module during the Master of Information Technology course at the Singapore Management University. This exercise involves building interative population pyramid using data from [Department of Statistics](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data), Singapore.
+author:
+  - first_name: "Karishma"
+    last_name: "Yadav"
+    url: https://www.linkedin.com/in/karishma-yadav-02310a168/
+    affiliation: MITB, Singapore Management University
+    affiliation_url: https://scis.smu.edu.sg/master-it-business?gclid=Cj0KCQiAxc6PBhCEARIsAH8Hff3m7di7-Qidt0qZHh13hQZzJAvOyCn0sVtYwH-uROOAAnCuvNkgSc0aAnboEALw_wcB
+date: "`r Sys.Date()`"
+output: 
+  distill::distill_article:
+    toc: TRUE
+    theme: thex02.css
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+```

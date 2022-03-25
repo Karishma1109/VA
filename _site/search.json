@@ -6,7 +6,7 @@
       "description": "This website consists of a collection of works done for ISSS608 Visual Analytics and Applications.",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-03-25T10:24:37+08:00"
+      "last_modified": "2022-03-25T10:38:44+08:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "Hello there, I am Karishma Yadav. Welcome to my Website!\n",
       "author": [],
       "contents": "\r\nThis website is built using the distill package in R. It is composed of my submissions for the Visual Analytics module taught by Professor Kam Tin Seong at the Singapore Management University. I hope you like my work!\r\nYan Ru was here!\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-03-25T10:38:10+08:00"
+      "last_modified": "2022-03-25T10:41:10+08:00"
     }
   ],
   "collections": []

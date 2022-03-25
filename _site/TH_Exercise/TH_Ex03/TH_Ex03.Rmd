@@ -1,0 +1,133 @@
+---
+title: "Makeover of Data Visualization"
+description: |
+  The aim of this article is to critique the given data visualization on Singapore Labour Force Participation Rate among different age-groups over the past 12 years and propose and build an improved visualization for the same using the Tableau Desktop interface.
+author:
+  - first_name: "Karishma"
+    last_name: "Yadav"
+    url: https://www.linkedin.com/in/karishma-yadav-02310a168/
+    affiliation: MITB, Singapore Management University
+    affiliation_url: https://scis.smu.edu.sg/master-it-business?gclid=Cj0KCQiAxc6PBhCEARIsAH8Hff3m7di7-Qidt0qZHh13hQZzJAvOyCn0sVtYwH-uROOAAnCuvNkgSc0aAnboEALw_wcB https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: 
+  distill::distill_article:
+    toc: TRUE
+    theme: TH_Ex03.css
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### R packages needed for the exercise
+The following packages in R will be required to use various functions offered by them for data preparation and data visualizations. *plotly* package is used to create the animated and interactive plots in R.
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+packages = c( 'knitr','corrplot', 'ggstatsplot','plotly','tidyverse','heatmaply','seriation', 'dendextend','reshape')
+for(p in packages)
+{
+  if(!require(p,character.only = T))
+  {
+    install.packages(p)
+  }
+  library(p,character.only = T)
+}
+```
+
+# Data Prepartion
+Two data sets, one containing Singapore population data for the time period 2000 to 2010 and the other containing the same for the time period 2011 to 2020 are imported and viewed as follows:
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+starbucks_drink <- read_csv("data/starbucks_drink.csv")
+unique(starbucks_drink$Category)
+```
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+kids_drinks_and_other <- starbucks_drink %>%
+  filter(Category == "kids-drinks-and-other" )
+
+unique(kids_drinks_and_other$Name)
+unique(kids_drinks_and_other$Milk)
+unique(kids_drinks_and_other$`Whipped Cream`)
+
+```
+```{r, echo = TRUE,fig.height = 10, fig.width = 10, warning = FALSE, message = FALSE}
+#summary(kids_drinks_and_other)
+ggstatsplot::ggcorrmat(
+  data = kids_drinks_and_other, 
+  cor.vars = 3:15,
+  ggcorrplot.args = list(outline.color = "black", 
+                         hc.order = TRUE,
+                         tl.cex = 14),
+  title    = "Correlogram for Starbucks dataset",
+  subtitle = "16 pairs are not significantly correlated at p < 0.05",
+   colors = c("#CC6600", "white", "#000066"), outline.color = "black",
+  ggtheme = theme_minimal()
+)
+```
+```{r}
+str(kids_drinks_and_other)
+kids_drinks_and_other['Caffeine(mg)'] <- sapply(kids_drinks_and_other['Caffeine(mg)'], as.numeric)
+kable(summary(kids_drinks_and_other[, 3:8]), format = "markdown")
+kable(summary(kids_drinks_and_other[, 9:15]), format = "markdown")
+```
+
+```{r}
+kids_drinks_and_other <- kids_drinks_and_other %>%
+  filter(`Caffeine(mg)` <225)
+```
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+kids_drinks_and_other$Milk[is.na(kids_drinks_and_other$Milk)] <- 'No Milk'
+kids_drinks_and_other$`Whipped Cream`[is.na(kids_drinks_and_other$`Whipped Cream`)] <- 'No Whipped Cream'
+```
+
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+kids_drinks_and_other$Kids_drinks <- paste(kids_drinks_and_other$Name,"_",kids_drinks_and_other$Milk,"_", kids_drinks_and_other$`Whipped Cream`,"-", kids_drinks_and_other$Size)
+
+```
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+sum(duplicated(kids_drinks_and_other))
+kids_drinks_and_other[, c(3:15)] <- sapply(kids_drinks_and_other[, c(3:15)], as.numeric)
+
+```
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+kids <- dplyr::select(kids_drinks_and_other, c(19, 4:15))
+kids[, 2:13] <- scale(kids[, 2:13])
+row.names(kids) <- kids$Kids_drinks
+
+```
+
+
+```{r, echo = TRUE, warning = FALSE, message = FALSE}
+kidsdrinks_matrix <- data.matrix(kids)
+wh_d <- dist(kidsdrinks_matrix[,-c(1)], method = "euclidean")
+dend_expend(wh_d)[[3]]
+```
+```{r}
+kidsdrinks_clust <- hclust(wh_d, method = "average")
+num_k <- find_k(kidsdrinks_clust)
+plot(num_k)
+
+```
+
+```{r, echo = TRUE, fig.height = 10, warning = FALSE, message = FALSE}
+heatmaply(kidsdrinks_matrix[,-c(1)],
+          Colv=NA,
+          dist_method = "euclidean",
+          hclust_method = "mcquitty",
+          k_row = 7,
+          fontsize_row = 2.5,
+          fontsize_col = 5,
+          colors = Blues)%>% layout(height=800,width=600)
+```
+
+
+
+
+
