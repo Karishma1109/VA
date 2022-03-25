@@ -11,12 +11,16 @@ navbar:
       - text: "Exercise 1"
         href: "TH_Exercise/TH_Ex01/TH_Ex01.html"
         theme: "thex01.css"
-    - text: "DataViz Makeover"
+      - text: "Exercise 2"
+        href: "TH_Exercise/TH_Ex02/TakeHome_Ex02.html"
+      - text: "Exercise 3"
+        href: "TH_Exercise/TH_Ex03/TakeHome_Ex03.html"
+      - text: "Exercise 4"
+        href: "TH_Exercise/TH_Ex04/TH_Ex04.html"
+    - text: "DataViz Makeovers"
       menu:
-      - text: "DataViz 1"
-        href: Dataviz1.html
-      - text: "DataViz 2"
-        href: Dataviz2.html
+      - text: "Makeover 1"
+        href: "Dataviz_Makeovers/Dataviz_Makeover_1/dataviz_makeover_01.html"
     - text: "About"
       href: about.html
     - icon: fab fa-github
