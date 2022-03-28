@@ -225,14 +225,21 @@ The proposed interactive data visualization dashboard was prepared using Tableau
 
 Both the tabs are same in the design except one is for In-Bound traffic to a Destination sub-zone and the other is for Out-Bound traffic from an origin sub-zone.
 
-![*Figure 12: In-Bound and Out-Bound tabs"*](images/Tab1.jpeg){width=70%}
+![*Figure 5: In-Bound and Out-Bound tabs"*](images/Tab1.jpeg){width=70%}
 
 
-![*Figure 12: To & Fro Tab"*](images/Tab 3.jpeg){width=70%}
+![*Figure 6: To & Fro Tab"*](images/Tab 3.jpeg){width=70%}
 
 
 The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/TotalBus-Trips?publish=yes).
 
+The screenshots of the tabs are displayed here:
+
+![*Figure 7: In-Bound Tab"*](images/image42.jpg){width=70%}
+
+![*Figure 8: Out-Bound Tab"*](images/image40.jpg){width=70%}
+
+![*Figure 9: To & Fro Tab"*](images/image43.jpg){width=70%}
 
 The proposed dashboard is better than the given dashboard in the following ways:
 
@@ -295,93 +302,97 @@ Step 3: The join is invalid as there is no common field name between the two dat
 
 Step 4: The null values in the fields "Origin_Sz" and "Destination_Sz" were explored as shown in the images below and it was considered appropriate to remove due to reasons mentioned earlier.
 
-![*Figure 12: Exploring Null Values](images/image9.jpg){width=50%}
+![*Figure 13: Exploring Null Values](images/image9.jpg){width=50%}
 
-![*Figure 12: Exploring Null Values in the "Destination_Sz" field*](images/image10.jpg){width=90%}
+![*Figure 14: Exploring Null Values in the "Destination_Sz" field*](images/image10.jpg){width=90%}
 
 
-![*Figure 12: Exploring Null Values in the "Origin_Sz" field*](images/image11.jpg){width=90%}
+![*Figure 15: Exploring Null Values in the "Origin_Sz" field*](images/image11.jpg){width=90%}
 
 
 Step 5: The NULL values were filtered away using the filter tab in Tableau for the "Origin_Sz" and "Destiantion_Sz" fields. The steps are explained in the figure below.
 
-![*Figure 12: Removing Null values using filters*](images/image12.jpg){width=60%}
+![*Figure 16: Removing Null values using filters*](images/image12.jpg){width=60%}
 
-![*Figure 13: Removed Null values for Origin and Destination sub-zone fields*](images/image13.jpg){width=40%}
+![*Figure 17: Removed Null values for Origin and Destination sub-zone fields*](images/image13.jpg){width=40%}
 
 
 Step 6: Unnecessary fields from the "origin_destination_bus_SZ_202201.csv" file were selected and hidden away as shown in the figure below. This was done to avoid having too many variables to navigate through. The variables kept were - "Origin_Sz", "Destination_Sz", "Total_Trips", "Time Per Hour" and "Day-Type" as these will be used in creating the data visualization dashboard that is proposed.
 
-![*Figure 12: Hiding unnecessary fields*](images/image6.jpg){width=50%}
+![*Figure 18: Hiding unnecessary fields*](images/image6.jpg){width=50%}
 
 
 Step 7: Moved to create a Sheet, then dragged and dropped the "Latitude" and "Longitude" fields in the "Rows" and "Columns" respectively to get the world map view. The screenshot is shown in the figure below.
 
-![*Figure 12: Creating the world map*](images/image14.jpg){width=50%}
+![*Figure 19: Creating the world map*](images/image14.jpg){width=50%}
 
 Step 8: Added Geometry to the Details to get the sub-zone areas in Singapore as shown in the figure below.
 
-![*Figure 12: Creating the Sub-Zone Geometry*](images/image15.jpg){width=50%}
+![*Figure 20: Creating the Sub-Zone Geometry*](images/image15.jpg){width=50%}
 
 Step 9: Then the field "Total Trips" was dragged and dropped to the "Color" Mark to get the areas colored as per the number of bus-trips. Subsequently, the "Origin_Sz" field was dragged and dropped to the "Details" Mark. The steps are shown in the figure below.
 
-![*Figure 12: Adding Color and Details*](images/image16.jpg){width=50%}
+![*Figure 21: Adding Color and Details*](images/image16.jpg){width=50%}
 
 Step 10: Subsequently "Destination_Sz", "Day Type" and "Time Per Hour" were moved to the the Filters pane, as shown in the figure below.
-![*Figure 12: Adding filters*](images/image17.jpg){width=50%}
+
+![*Figure 22: Adding filters*](images/image17.jpg){width=50%}
 
 Step 11: "Show Filter" option was selected from the drop-down menu that appeared on clicking the upside down triangle on the filter variables and appropriate filters were selected as shown in the figures below.
 
-![*Figure 12: Show filters*](images/image18.jpg){width=40%}
+![*Figure 23: Show filters*](images/image18.jpg){width=40%}
 
 
 Step 12: Filter types for the "Day Type" and "Destination_Sz" were changed as shown in the figure below.
 
-![*Figure 12: Change filters*](images/image20.jpg){width=40%}
+![*Figure 24: Change filters*](images/image20.jpg){width=40%}
 
 
 Step 13: The Filter Title names were changed appropriately, the exact names can be found in the dashboard. The Edit Title tab was selected from the drop-down menu that appears on clicking on the filter options. After that a dialog box appears where the text can be specified and formatting of the text can be done as required. 
 
-![*Figure 12: Edit Title*](images/image21.jpg){width=40%}
+![*Figure 25: Edit Title*](images/image21.jpg){width=40%}
 
-![*Figure 12: Changing the filter Title Text*](images/image22.jpg){width=40%}
+
+![*Figure 26: Changing the filter Title Text*](images/image22.jpg){width=40%}
 
 
 Step 14: The Sheet title was changed by clicking on the Sheet name box, after which a dialog box appeared where the text was specified and formatted as shown in the figure below.
 
-![*Figure 12: Changing the Sheet Title Text*](images/image23.jpg){width=70%}
+![*Figure 27: Changing the Sheet Title Text*](images/image23.jpg){width=70%}
 
 
 Step 15: Then the "Total Trips" field was added to the "Details" mark and a quick table calculation was added to create the "% of total trips from the origin sub-zone" which will add this variable in the tooltip for each of the origin sub-zones for the selected destination sub-zone.
 
-![*Figure 12: Creating % of total trips field*](images/image24.jpg){width=50%}
+![*Figure 28: Creating % of total trips field*](images/image24.jpg){width=50%}
 
 
 Step 16: The Tooltips in the Marks pane was double clicked and the tooltip details were changed as shown in the figure below.
 
-![*Figure 12: Editing tooltip details*](images/image25.jpg){width=50%}
+![*Figure 29: Editing tooltip details*](images/image25.jpg){width=50%}
 
-![*Figure 12: Frequency of Bus-Trips from Origin sub-zones for the Selected Destination*](images/image26.jpg){width=50%}
+![*Figure 30: Frequency of Bus-Trips from Origin sub-zones for the Selected Destination*](images/image26.jpg){width=50%}
 
 
 A new workbook was created parallely where the two data sets were joined by equating the "Subzone_N" and "Destination_Sz" fields. Then Steps 1-16 were repeated to create the same plot for getting the frequency of bus-trips to destination sub-zones for the selected origin. The only Change was in place of selected the "Origin_Sz", "Destination_Sz" was selected and in place of "Destination_Sz","Origin_Sz" was selected.
 The final view of the chart is shown below.
 
-![*Figure 12: Bus Trips Originating from Selected Origin Sub-Zone by Day Type and Time Per Hour*](images/image27.jpg){width=50%}
+![*Figure 31: Bus Trips Originating from Selected Origin Sub-Zone by Day Type and Time Per Hour*](images/image27.jpg){width=50%}
 
 
 Step 17: A new sheet was created and the fields "Day Type", "Time Per Hour" and "Total Trips" were moved to rows and columns as shown in the figure below.
 
-![*Figure 12: Moving fields to rows and columns*](images/image29.jpg){width=50%}
+![*Figure 32: Moving fields to rows and columns*](images/image29.jpg){width=50%}
 
 
 Step 18: Added "Destination_Sz" as the filter and changed filter type, also added the "Day Type" as color and change color by clicking on the color mark and choosing the colors as required.
 
-![*Figure 12: Adding filters and colors*](images/image28.jpg){width=50%}
+![*Figure 33: Adding filters and colors*](images/image28.jpg){width=50%}
+
 
 Step 19: Edited the "Time Per Hour" axis by right clicking on it and selecting fixed ticks and setting the range from 0 to 23 as shown in the figure below.
 
-![*Figure 12: Setting the ticks of "Time Per Hour axis"*](images/image30.jpg){width=50%}
+![*Figure 34: Setting the ticks of "Time Per Hour axis"*](images/image30.jpg){width=50%}
+
 
 Steps 17 to 19 were repeated to create the same chart of "Origin_Sz" in the second workbook.
 
@@ -391,7 +402,7 @@ Then, "Origin_Sz" and "Time Per Hour" were dragged and dropped to the "Filters" 
 
 Eventually the tooltips were edited to shown the result shown in the figure below.
 
-![*Figure 12: Bus-Trips Originating from selected origin sub-zone/s by time per hour"*](images/image31.jpg){width=70%}
+![*Figure 35: Bus-Trips Originating from selected origin sub-zone/s by time per hour"*](images/image31.jpg){width=70%}
 
 Step 20 was followed to create the same chart for "Destination_Sz" in the second workbook.
 
@@ -401,24 +412,46 @@ Step 22: The dashboards "In-Bound Traffic to Destination Sub-Zone", "Out-Bound T
 
 Step 23: An embedded web-page link was created for the "Trip Frequency Map for Origin Sub-Zone" dashboard by adding "&:toolbar=no&:showVizHome=no&embed=true" extension to the dashboard share link on Tableau. This link was used to add this as a webpage object to the "Trip Frequency Map for Destination Sub-Zone" dashboard to get them side by side as shown in the figure below.
 
-![*Figure 12: Bus-Trips across Planning sub-zones in Singapore by Day Type"*](images/image32.jpg){width=70%}
+![*Figure 36: Bus-Trips across Planning sub-zones in Singapore by Day Type"*](images/image32.jpg){width=70%}
+
 
 Step 24: Step 23 was repeated to create a tableau embed link for the "Out-Bound Traffic From Origin Sub-Zone" dashboard and this was pasted in the workbook 1 which has the "In-Bound Traffic to Destination Sub-Zone" dashboard. Along with it the dashboard "Bus-Trips across Planning sub-zones in Singapore by Day Type" created in step 23 was also added as another dashboard by copy and pasting the dashboard across sheets.
 
 Step 25: At the final step, we had 3 dashboards mentioned in step 24. 3 navigation buttons were created on all 3 dashboards following the steps listed in the figure below.
 
-![*Figure 12: Adding Navigation Buttons to the Dashboards"*](images/image33.jpg){width=70%}
+![*Figure 37: Adding Navigation Buttons to the Dashboards"*](images/image33.jpg){width=70%}
 
 
 # 6. Observations:
 
-1.	The morning and evening peak of inbound and outbound bus trips respectively is also an indication of the workforce commuting to and from the airport.
+1.	From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively is also an indication of the workforce commuting to and from the airport.
 
-2.	Incase of Sentosa an interesting trend has been observed where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
+![*Figure 38: Peak time for outgoing bus-trips"*](images/image38.jpg){width=70%}
 
-3. Tampines east appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east
+![*Figure 39: Peak time for incoming bus-trips"*](images/image39.jpg){width=70%}
+
+
+2.	Incase of Sentosa an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
+
+![*Figure 40: Adding Navigation Buttons to the Dashboards"*](images/image34.jpg){width=70%}
+
+
+
+3. Tampines east appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east.
+
+![*Figure 41: Most popular Sub-Zone"*](images/image35.jpg){width=70%}
+
+![*Figure 42: Most popular Sub-Zone"*](images/image37.jpg){width=70%}
  
 
 # 7. References
 
-1. Kam Tin Seong, "Information Dashboard Design", 
+1. Kam Tin Seong, "Information Dashboard Design"
+2. VizConnect, YouTube, "VizConnect Embedding dashboards within another Tableau dashboard"
+3. Jellyman Education, Youtube, "Switch Between Dashboards in Tableau | How to Use Buttons!"
+4. Ji Soo Yi, Youn ah Kang, John T. Stasko, Member, IEEE, and Julie A. Jack, Toward a Deeper Understanding of the Role of
+Interaction in Information Visualization
+5. CHRIS NORTH- AND BEN SHNEIDERMAN, Snap-together visualization: can users construct and
+operate coordinated visualizations?
+6. Ben Shneiderman, The Eyes Have It:
+A Task by Data Type Taxonomy for Information Visualizations
