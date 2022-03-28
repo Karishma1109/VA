@@ -422,7 +422,7 @@ Step 25: At the final step, we had 3 dashboards mentioned in step 24. 3 navigati
 ![*Figure 37: Adding Navigation Buttons to the Dashboards"*](images/image33.jpg){width=70%}
 
 
-# 6. Observations:
+# 7. Observations:
 
 1.	From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively is also an indication of the workforce commuting to and from the airport.
 
@@ -444,7 +444,7 @@ Step 25: At the final step, we had 3 dashboards mentioned in step 24. 3 navigati
 ![*Figure 42: Most popular Sub-Zone"*](images/image37.jpg){width=70%}
  
 
-# 7. References
+# 8. References
 
 1. Kam Tin Seong, "Information Dashboard Design"
 2. VizConnect, YouTube, "VizConnect Embedding dashboards within another Tableau dashboard"
