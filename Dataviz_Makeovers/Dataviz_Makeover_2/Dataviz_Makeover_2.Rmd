@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/karishma-yadav-02310a168/
     affiliation: MITB, Singapore Management University
     affiliation_url: https://scis.smu.edu.sg/master-it-business?gclid=Cj0KCQiAxc6PBhCEARIsAH8Hff3m7di7-Qidt0qZHh13hQZzJAvOyCn0sVtYwH-uROOAAnCuvNkgSc0aAnboEALw_wcB https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+date: "March 28, 2022"
 output: 
   distill::distill_article:
     toc: TRUE
