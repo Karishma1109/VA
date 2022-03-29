@@ -237,7 +237,7 @@ Both the tabs are same in the design except one is for In-Bound traffic to a Des
 ![*Figure 6: To & Fro Tab"*](images/Tab 3.jpeg){width=70%}
 
 
-The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/TotalBus-Trips?publish=yes).
+The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/DestinationSub-Zone?publish=yes).
 
 The screenshots of the tabs are displayed here:
 
@@ -282,7 +282,7 @@ The dashboard also shows the frequency of bus-trips originating from multiple su
   
 # 6. Preparing the final visualisation
 
-The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/TotalBus-Trips?publish=yes).
+The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/DestinationSub-Zone?publish=yes).
 
 
 ### Steps-by-Step Explaination
