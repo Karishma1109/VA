@@ -133,7 +133,7 @@ The number of origin and destination sub-zones are the same for the weekday adja
 
   b) **Titles for both the plots lack clarity**: The titles for both the adjacency matrices do not mention what the matrix intersections represent until one hovers over the points on the matrices.
   
-  c) **Lack of clarity in the Tool tips**: 
+  c) **Lack of clarity in the Tool tips**: The text, "% of Total Total Trips along Table (Across)" is ambiguous as it does not reflect the variable this percentage is for. It would be appropriate to change it to ‘% of Total Bus-Trips from the Origin Sub-zone’. 
   
 ### 4.1.5 Existence of NULL Values for the Origin and Destination sub-zones
 
@@ -207,7 +207,7 @@ Adjacency matrix is not the correct type of chart for plotting the percentage of
 The plot only allows the users to choose 1 origin sub-zone and 1 destination sub-zone and there are tool tips on the charts. The charts use various features which can be used as filters to provide flexibility to the users to make selections for the hourly intervals.
 
 
-# 5. Proposed Interactive Data Visualization Dashboard
+# 5. Proposed Data Visualization Dashboard
 
 
 The proposed interactive data visualization dashboard was prepared using Tableau software. The proposed dashboard contains 3 different tabs. The details and functions are mentioned below:
@@ -218,12 +218,13 @@ The proposed interactive data visualization dashboard was prepared using Tableau
 
   3. **To & Fro Tab**: This tab enables users to compare the number of trips originating from one or multiple sub-zones of their choice for weekday and weekdays/holidays with each other and with the number of trips attracted one or multiple sub-zones for weekday and weekdays/holidays. They can also choose the time per hour of their choice by moving the given slider tab. This allows users to view the frequency of bus-trips originating from and attracted to various sub-zones and compare them in several ways:
   
-    - Compare number of bus-trips originating from one sub-zone with one or more other sub-zones.
+      - Compare number of bus-trips originating from one sub-zone with one or more other sub-zones.
     
-    - Compare number of bus-trips attracted to one sub-zone with one or more other sub-zones.
+      - Compare number of bus-trips attracted to one sub-zone with one or more other sub-zones.
     
-    - Compare the weekday and weekends/holiday frequencies for the cases a & b mentioned above and across these two cases.
-    
+      - Compare the weekday and weekends/holiday frequencies for the cases a & b mentioned above and across these two cases.
+
+
 ### 5.1 Tabs In-Bound and Out-Bound
 
 Both the tabs are same in the design except one is for In-Bound traffic to a Destination sub-zone and the other is for Out-Bound traffic from an origin sub-zone.
@@ -469,7 +470,7 @@ The final results for the tab are already shown in figures 7, 8 & 9. One of the 
 For the understanding how to embed a webpage object on a Tableau dashboard, steps demonstrated in the Youtube [video1](https://www.youtube.com/watch?v=nWXK4sMspwo) were followed. And for understanding how to add navigation buttons, steps demonstrated in the Youtube [video2](https://www.youtube.com/watch?v=u9OUyZy_d8M) were followed.
 
 
-# 7. Observations:
+# 7. Observations
 
 For optimum view, the dashboard is suggested to be opened in desktop or laptop screens as the dashboard sizes were set to fixed to contain the entire view of different components within one screen.
 
