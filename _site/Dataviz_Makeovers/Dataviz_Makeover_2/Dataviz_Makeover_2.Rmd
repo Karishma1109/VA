@@ -30,6 +30,8 @@ Additionally, the article also aims to infer the objectives of given visualizati
 
 ### The Tasks
 
+The tasks fulfilled in this article inlcude the following:
+
   1. Critic the data visualisation from its clarity, aesthetics and interactive design. At least three from each evaluation criterion.
   
   2. With reference to the critics above, suggest alternative graphical presentation to improve the current design. Sketch out the proposed design. The proposed alternative design should include appropriate interactive techniques. Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.
@@ -63,7 +65,7 @@ The data set 'origin_destination_bus_SZ_202201.csv' contains over 5 million reco
   
   5. "Destination Sz": Represents the destination sub-zone for a bus-trip.
   
-The "Year Month" variable has only one unique value "2022-01" which means the bus-trips mentioned in the data set are for the month of January 2022. Other fields in the data set were not used to prepare given and the proposed data visualizations. 
+The "Year Month" variable has only one unique value "2022-01" which means the bus-trips mentioned in the data set are for the month of January 2022, therefore it can be skipped. Other fields in the data set were not used to prepare given and the proposed data visualizations and hence they were hidden away while preparing the data. 
 
 
 From the given data visualization, its objectives can be inferred as follows:
@@ -74,7 +76,7 @@ From the given data visualization, its objectives can be inferred as follows:
     
   - To represent the number and percentage of bus-trips happening between all the origin sub-zones and destination sub-zones.
 
-Furthermore, it can also be inferred that the outcomes of the prepared data visualizations should be useful in decision making, for the travelers, researchers, academicians as well as the concerned authorities (Land and Transport Authority, Ministry of Transport, Singapore in this particular case). The data visualization dashboard design is proposed and prepared in later sections and step-by-step preparation steps are also provided. The detailed preparation steps can be leveraged by the users to reproduce the dashboard for their specific use-cases mentioned below:
+Furthermore, it can also be inferred that the outcomes of the prepared data visualizations should be useful in decision making, for the travelers, researchers, academicians as well as the concerned authorities (Land and Transport Authority, Ministry of Transport, Singapore in this particular case). The data visualization dashboard design is proposed and prepared in later sections and step-by-step preparation steps are also provided. The detailed preparation steps can  also be leveraged by the users to reproduce the dashboard for their specific use-cases mentioned below:
 
   - For geographical regions other than Singapore.
   
@@ -119,7 +121,7 @@ The complete field name is captured from the data set and represented in figure 
 ![*Figure 3: Complete Field Name highlighted in red box*](images/image2.jpg){width=50%}
 
 
-The field name is "Weekend/Holidays" is not fully captured in the data visualization leading to lack of clarity on what the field refers to. In this case, the users might confuse bus-trips that take place on a holiday that falls on a weekday to be counted in the "WEEKDAY" plots leading to misinterpretation. This is because they cannot see that the weekends and holidays are actually combined and represented separately in the "WEEKDAYS.." plots.
+The field name is "Weekend/Holidays" is not fully captured in the data visualization leading to lack of clarity on what the field refers to. In this case, the users might confuse bus-trips that take place on a holiday that falls on a weekday to be counted in the "WEEKDAY" plots leading to misinterpretation. This is because they cannot see that the weekends and holidays are actually combined and represented separately in the "WEEKENDS.." plots.
 
 ### 4.1.3 Incomplete Plot for Weekend/Holidays Adjacency Matrix of bus-trips between Origin and Destination sub-zones.
 
@@ -474,7 +476,7 @@ For the understanding how to embed a webpage object on a Tableau dashboard, step
 
 For optimum view, the dashboard is suggested to be opened in desktop or laptop screens as the dashboard sizes were set to fixed to contain the entire view of different components within one screen.
 
-The dashboard can be utilized by users to study the bus flows for various sub-zones in Singapore and identify the sub-zones for business, those for leisure and recreation and those where the most number of residents are residing or visiting to and fro during different day types and hours of the day for month of January 2022.
+The dashboard can be utilized by users to study the bus flows for various sub-zones in Singapore and identify the sub-zones for business, those for leisure and recreation and those where the most number of individuals are residing or visiting to and fro during different day types and hours of the day for month of January 2022. The general assumption while making these observations is that the bus-flows in Singapore are in correspondence to the passenger traffic.
 
 1. The general trend is that the number bus-trips to & fro a sub-zone are higher for weekdays as compared to weekends for all the sub-zones. Which also makes sense as on weekdays, people have to travel around for work. While on weekends, they have the option to sit back home and relax.
 
@@ -510,6 +512,9 @@ Interestingly, the trips on weekends are quite low, this could be due to the bor
 
 ![*Figure 50: Trips Originating from Tampines East"*](images/image37.jpg){width=100%}
  
+7. Another key interesting observation is that the sub-zones with largest and second largest areas - "Western Water Catchment" and "Central Water Catchment" do not receive the highest bus-flows because of the nature of the sub-zones. 
+
+The above are only a few observations, the dashboard can be used to actually study bus-flows across each and every sub-zone.
 
 # 8. References
 
