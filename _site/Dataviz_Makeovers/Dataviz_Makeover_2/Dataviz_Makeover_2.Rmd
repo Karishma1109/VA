@@ -25,7 +25,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
 # 1. Overview
 
 The article aims to fulfill the tasks listed in the [article](https://isss608-ay2021-22t2.netlify.app/dataviz/dataviz2) using **Tableau Desktop 2021.4**.
-The tasks refer to a given interactive data visualization dashboard for the Singapore's inter and intra-zonal public bus flows at the planning sub-zone level for January 2022. This article aims to critique the interactive data visualization dashboard on various aspects of clarity, aesthetics and interactive design. Additionally, the article also aims to infer the objectives of given visualization and assess whether it fulfills those objective appropriately. 
+The tasks refer to a given interactive data visualization dashboard for the Singapore's inter and intra-zonal public bus flows at the planning sub-zone level for January 2022. This article aims to critique the interactive data visualization dashboard on various aspects of clarity, aesthetics and interactive design.
+Additionally, the article also aims to infer the objectives of given visualization and assess whether it fulfills those objective appropriately. Thereafter propose an improved visual dashboard to fulfill the inferred objectives and add additional features to improve the data analysis and give more insights into the data.
 
 ### The Tasks
 
@@ -139,7 +140,11 @@ The number of origin and destination sub-zones are the same for the weekday adja
 The dashboard gives the users an option to select NULL origin and destination sub-zones.
 The NULL Values for the origin and destination sub-zones were explored and it was found that the most of the NULL origin sub-zones do correspond to non-null destination sub-zones and most of NULL destination sub-zones correspond to non-null origin sub-zones. Apart from this, some of the records have NULL values for both the origin and destination sub-zones. This creates a lot of ambiguity.
 
-### 4.1.6.  Lack of dashboard caption
+### 4.1.6 Lack of mention of the time period
+
+There is no mention of the time period for the data represented in the dashboard, which contributes to lack of clarity and the users cannot make any meaningful conclusions from the observed findings or they might end up generalizing the derived insights for time periods.
+
+### 4.1.7  Lack of dashboard caption
 
 There is no mention of the source of data in the caption. This makes it unclear to the user as to whether the charts comes use a reliable data source or not.
 
@@ -202,24 +207,22 @@ Adjacency matrix is not the correct type of chart for plotting the percentage of
 The plot only allows the users to choose 1 origin sub-zone and 1 destination sub-zone and there are tool tips on the charts. The charts use various features which can be used as filters to provide flexibility to the users to make selections for the hourly intervals.
 
 
-
-
 # 5. Proposed Interactive Data Visualization Dashboard
 
 
 The proposed interactive data visualization dashboard was prepared using Tableau software. The proposed dashboard contains 3 different tabs. The details and functions are mentioned below:
 
-1. **In-Bound Tab**: This tab is designed for users to select a destination sub-zone of their choice and for the selected destination sub-zone, it displays 2 charts. One is a frequency bar-chart with two facets showing the number of trips arriving at the selected destination by the time per hour in the day, for weekday and weekends/holiday. The second chart is a sub-zonal geo-spatial area map of Singapore. It displays the number of trips arriving at the selected destination from each of the sub-zones and the percentage of total trips arriving from each sub-zone through use of colors and tool tip. For the geo-spatial chart, the user can select the day type and time per hour of their interest based on insights derived from the first chart or independently. 
+  1. **In-Bound Tab**: This tab is designed for users to select a destination sub-zone of their choice and for the selected destination sub-zone, it displays 2 charts. One is a frequency bar-chart with two facets showing the number of trips arriving at the selected destination by the time per hour in the day, for weekday and weekends/holiday. The second chart is a sub-zonal geo-spatial area map of Singapore. It displays the number of trips arriving at the selected destination from each of the sub-zones and the percentage of total trips arriving from each sub-zone through use of colors and tool tip. For the geo-spatial chart, the user can select the day type and time per hour of their interest based on insights derived from the first chart or independently. 
 
-2. **Out-Bound Tab**: This design and functionality of this tab is exactly the same as the first tab, just the content and results differ. Instead of selecting a destination sub-zone, the user selects an origin sub-zone to look at the number of trips from this sub-zone to various destination sub-zones across Singapore.
+  2. **Out-Bound Tab**: This design and functionality of this tab is exactly the same as the first tab, just the content and results differ. Instead of selecting a destination sub-zone, the user selects an origin sub-zone to look at the number of trips from this sub-zone to various destination sub-zones across Singapore.
 
-3. **To & Fro Tab**: This tab enables users to compare the number of trips originating from one or multiple sub-zones of their choice for weekday and weekdays/holidays with each other and with the number of trips attracted one or multiple sub-zones for weekday and weekdays/holidays. They can also choose the time per hour of their choice by moving the given slider tab. This allows users to view the frequency of bus-trips originating from and attracted to various sub-zones and compare them in several ways:
+  3. **To & Fro Tab**: This tab enables users to compare the number of trips originating from one or multiple sub-zones of their choice for weekday and weekdays/holidays with each other and with the number of trips attracted one or multiple sub-zones for weekday and weekdays/holidays. They can also choose the time per hour of their choice by moving the given slider tab. This allows users to view the frequency of bus-trips originating from and attracted to various sub-zones and compare them in several ways:
   
-  a. Compare number of bus-trips originating from one sub-zone with one or more other sub-zones.
+    - Compare number of bus-trips originating from one sub-zone with one or more other sub-zones.
     
-  b. Compare number of bus-trips attracted to one sub-zone with one or more other sub-zones.
+    - Compare number of bus-trips attracted to one sub-zone with one or more other sub-zones.
     
-  c. Compare the weekday and weekends/holiday frequencies for the cases a & b mentioned above and across these two cases.
+    - Compare the weekday and weekends/holiday frequencies for the cases a & b mentioned above and across these two cases.
     
 ### 5.1 Tabs In-Bound and Out-Bound
 
@@ -243,43 +246,43 @@ The screenshots of the tabs are displayed here:
 
 The proposed dashboard is better than the given dashboard in the following ways:
 
-1. **Clarity issues addressed by the proposed dashboard**: In terms of clarity, the proposed dashboard addresses the following issues:
+  1. **Clarity issues addressed by the proposed dashboard**: In terms of clarity, the proposed dashboard addresses the following issues:
 
-  a. It has detailed titles for all the components including the dashboard, the tabs and the individual charts which improves clarity about the contents of the dashboard.
+      - It has detailed titles for all the components including the dashboard, the tabs and the individual charts which improves clarity about the contents of the dashboard.
   
-  b. It provides the users with clear directions on how to navigate through the dashboard by mentioning proper titles for the filters and legends. In the given visualization, the filters and labels are merged together, the users cannot identify how to interact with the dashboard.
-  c. It removes null values to avoid ambiguity.
+      - It provides the users with clear directions on how to navigate through the dashboard by mentioning proper titles for the filters and legends. In the given visualization, the filters and labels are merged together, the users cannot identify how to interact with the dashboard.
+      - It removes null values to avoid ambiguity.
   
-  d. It transforms the adjacency matrix into geo-spatial plots where users can choose the origin sub-zone of their choice and look at the number and percentage of bus-trips attracted to each of the destination sub-zones. The clarity is improved in the sense that, in the adjacency matrix, the users cannot directly find the origin sub-zone they want to see the % of total bus trips attracted to each of the destination sub-zones, they can neither easily navigate to the destination sub-zone they want to look at. The adjacency matrix tooltip also does not mention the number of trips, which would have been useful for the users. Geo-spatial plot with color legend for the number of trips and tool tips for the percentage of trips attracted to each destination makes the information easy to access and gives clarity on the number of trips as well. 
+      - It transforms the adjacency matrix into geo-spatial plots where users can choose the origin sub-zone of their choice and look at the number and percentage of bus-trips attracted to each of the destination sub-zones. The clarity is improved in the sense that, in the adjacency matrix, the users cannot directly find the origin sub-zone they want to see the % of total bus trips attracted to each of the destination sub-zones, they can neither easily navigate to the destination sub-zone they want to look at. The adjacency matrix tooltip also does not mention the number of trips, which would have been useful for the users. Geo-spatial plot with color legend for the number of trips and tool tips for the percentage of trips attracted to each destination makes the information easy to access and gives clarity on the number of trips as well. 
   
-  e. The proposed design places each of the filter selections and legends for their respective plots to avoid any confusion.
+      - The proposed design places each of the filter selections and legends for their respective plots to avoid any confusion.
 
-2. **Aesthetics issues addressed by the proposed dashboard**: The aesthetics have been significantly improved in the proposed dashboard, in the following ways:
+  2. **Aesthetics issues addressed by the proposed dashboard**: The aesthetics have been significantly improved in the proposed dashboard, in the following ways:
 
-  a. The positioning of charts are aligned.
+      - The positioning of charts are aligned.
   
-  b. The sizes and aspect ratios of the charts are aligned.
+      - The sizes and aspect ratios of the charts are aligned.
   
-  c. The legends and filters are organized appropriately.
+      -  The legends and filters are organized appropriately.
   
-  d. The dashboard view fits into the screen.
+      - The dashboard view fits into the screen.
   
-  e. The weekday and weekends/holidays bus-trip frequencies are colored in different colors to make the plots easier to view and also look good.
+      - The weekday and weekends/holidays bus-trip frequencies are colored in different colors to make the plots easier to view and also look good.
   
-  f. The number of sub-zone data points on the plot which were in a list format in the given visualization have been changed to drop-down menu to have better aesthetics.
+      - The number of sub-zone data points on the plot which were in a list format in the given visualization have been changed to drop-down menu to have better aesthetics.
   
-  g. Tabs have been introduced which eliminate unnecessary cluttering of the dashboard view and make it easy to navigate and better to look at.
+      - Tabs have been introduced which eliminate unnecessary cluttering of the dashboard view and make it easy to navigate and better to look at.
 
-3. **Additional features**: The proposed visualization also proposes additional features into the dashboard for the purposes of increasing interactivity and flexibility and also to provide additional insights the data can provide. Along with a geo-spatial plot for showing the percentage of trips originating from a sub-zone and going to different sub-zones. The dashboard also show the the percentage of trips attracted to a sub-zone and originating from different sub-zones. Along with the percentages, the number of trips are also displayed. Additionally, it introduces the flexibility to choose the hourly time intervals they want to look at.
+  3. **Additional features**: The proposed visualization also proposes additional features into the dashboard for the purposes of increasing interactivity and flexibility and also to provide additional insights the data can provide. Along with a geo-spatial plot for showing the percentage of trips originating from a sub-zone and going to different sub-zones. The dashboard also show the the percentage of trips attracted to a sub-zone and originating from different sub-zones. Along with the percentages, the number of trips are also displayed. Additionally, it introduces the flexibility to choose the hourly time intervals they want to look at.
 
 The dashboard also shows the frequency of bus-trips originating from multiple sub-zones and attracted to multiple sub-zones by day-types parallelly through geo-spatial to enable all the permutations of comparison that can be done across these features along with the choice of selecting the hourly time intervals they want to look at.
   
-## 6. The Makeover Visualization
+# 6. Preparing the final visualisation
 
 The final visualization can be found here- [Bus Flows in Singapore at Planning Sub-Zone Levels](https://public.tableau.com/app/profile/karishma.yadav2567/viz/BUS-TRIPSACROSSPLANNINGSUB-ZONESSINGAPORE/TotalBus-Trips?publish=yes).
 
 
-### 6.1 Steps-by-Step Explaination
+### Steps-by-Step Explaination
 
 This section focuses on explaining the step by step process that was used to create the proposed visualization and the various new techniques such as dashboard merging and embedding tableau public links into a dashboard as web pages were explored and implemented. 
 The data set file "origin_destination_bus_SZ_202201.csv" contained over 5 million records.
@@ -424,14 +427,32 @@ Step 25: At the final step, we had 3 dashboards mentioned in step 24. 3 navigati
 
 # 7. Observations:
 
-1.	From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively is also an indication of the workforce commuting to and from the airport.
+For optimum view, the dashboard is suggested to be opened in desktop or laptop screens as the dashboard sizes were set to fixed to contain the entire view of different components within one screen.
 
-![*Figure 38: Peak time for outgoing bus-trips"*](images/image38.jpg){width=70%}
-
-![*Figure 39: Peak time for incoming bus-trips"*](images/image39.jpg){width=70%}
+The dashboard can be utilized by users to study the bus flows for various sub-zones in Singapore and identify the sub-zones for business, those for leisure and recreation and those where the most number of residents are residing or visiting to and fro during different day types and hours of the day for month of January 2022.
 
 
-2.	Incase of Sentosa an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
+1.	**Raffles Place** is a sub-zone under the Downtown Core Planning Area. 
+From the bar plots in figure 38, the number of Bus-Trips attracted to this place in the morning hours between 8 and 10 on weekdays is the highest, while the same trend is not observed for weekends/holidays suggesting that this a business sub-zone with many offices.
+From the map on right, it can be observed that most of the trips coming to Raffles place are from the areas close to its proximity. The highest from Maritime Square, suggesting that this is the area where most of the people working in Raffles place are residing. The frequency of bus-trips to raffles place from farther sub-zones such as Senja and Saujana are very few for the month of January 2022.
+
+![*Figure 38: Peak time for bus-trips attracted to Raffles Place"*](images/image43.jpg){width=100%}
+
+For the weekday evenings, it can be seen in figure 39 that most of the trips originating from Raffles are between 5-7 pm which corresponds to the time-period when most of the office close for the day. It can be seen that the people linger in the area till 8pm, suggesting that perhaps some offices close later or the people leave after hanging out for a bit for dinner.
+
+![*Figure 39: Peak time for bus-trips originating from Raffles Place"*](images/image43.jpg){width=100%}
+
+Similary for **Changi Airport** which is another popular business sub-zone in Singapore, Similar trends are observed.
+
+
+From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively corresponds to workforce commuting to and from the airport. This suggests there is a lot of outflow of individuals to other countries for work and a lot of outflow from Changi Airport to various sub-zones in Singapore in the mornings of weekdays suggests people arriving back. Whereas this trend is consistent for the weekends/holidays.
+
+![*Figure 40: Peak time for Trips attracted to Changi Airport"*](images/image38.jpg){width=70%}
+
+![*Figure 41: Peak time for trips originating from Changi Airport"*](images/image39.jpg){width=70%}
+Similar trends can be observed for other business sub-zones.
+
+2.	In case of **Sentosa** an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
 
 ![*Figure 40: Adding Navigation Buttons to the Dashboards"*](images/image34.jpg){width=70%}
 
