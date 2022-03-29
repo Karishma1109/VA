@@ -512,7 +512,7 @@ Interestingly, the trips on weekends are quite low, this could be due to the bor
 
 ![*Figure 50: Trips Originating from Tampines East"*](images/image37.jpg){width=100%}
  
-7. Another key interesting observation is that the sub-zones with largest and second largest areas - "Western Water Catchment" and "Central Water Catchment" do not receive the highest bus-flows because of the nature of the sub-zones. 
+7. Another key interesting observation is that the sub-zones with largest and second largest areas - "Western Water Catchment" and "Central Water Catchment" do not receive the highest bus-flows but rather they receive much below the average number of bus-flows across all the sub-zones because of the nature of the two sub-zones. 
 
 The above are only a few observations, the dashboard can be used to actually study bus-flows across each and every sub-zone.
 
