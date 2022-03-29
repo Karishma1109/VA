@@ -1,7 +1,7 @@
 ---
 title: "Makeover of Interactive Data Visualization"
 description: |
-  The aim of this article is to critique the [given](https://public.tableau.com/app/profile/tskam/viz/prototype1_16468762782120/Dashboard1) interactive data visualization which aims to reveal inter and intra-zonal public bus flows at the planning sub-zone level of January 2022 for Singapore and thereafter, propose and build reproducible alternate interactive data visualization.
+  The aim of this article is to critique the [given interactive data visualization](https://public.tableau.com/app/profile/tskam/viz/prototype1_16468762782120/Dashboard1) which aims to reveal inter and intra-zonal public bus flows at the planning sub-zone level of January 2022 for Singapore and thereafter, propose and build reproducible alternate interactive data visualization.
 author:
   - first_name: "Karishma"
     last_name: "Yadav"
@@ -43,7 +43,7 @@ Provide step-by-step description on how the data visualisation was prepared.
 
 # 2. Given interactive visualization
 
-The [given](https://public.tableau.com/app/profile/tskam/viz/prototype1_16468762782120/Dashboard1) interactive data visualization is prepared using data from the following sources:
+The [given interactive data visualization](https://public.tableau.com/app/profile/tskam/viz/prototype1_16468762782120/Dashboard1) is prepared using data from the following sources:
 
   1. origin_destination_bus_SZ_202201.csv, this data set was downloaded from LTA Datamall and URA region, planning area and planning sub-zone information were added by using GIS Overlay operation.
   2. MP14_SUBZONE_WEB_PL, this data provides URA Master Plan 2014 Planning sub-zone boundary map in ESRI shape file format. It was downloaded from data.gov.sg.
@@ -118,7 +118,7 @@ In Figure 2, it can be seen that the field names, highlighted in red boxes, on t
 
 The complete field name is captured from the data set and represented in figure 3. 
 
-![*Figure 3: Complete Field Name highlighted in red box*](images/image2.jpg){width=50%}
+![*Figure 3: Complete Field Name highlighted in red box*](images/image2.jpg){width=40%}
 
 
 The field name is "Weekend/Holidays" is not fully captured in the data visualization leading to lack of clarity on what the field refers to. In this case, the users might confuse bus-trips that take place on a holiday that falls on a weekday to be counted in the "WEEKDAY" plots leading to misinterpretation. This is because they cannot see that the weekends and holidays are actually combined and represented separately in the "WEEKENDS.." plots.
@@ -127,7 +127,7 @@ The field name is "Weekend/Holidays" is not fully captured in the data visualiza
 
 The number of origin and destination sub-zones are the same for the weekday adjacency matrix and the weekends/holidays adjacency matrix and the aspect ratio is also the same but still the size of the adjacency matrix of the weekdays/holidays for bus-trips between origin and destination sub-zones is smaller, meaning that the plot is incomplete. The figure 4 represents the incomplete plot. Ideally, the entire view of all the plots in a dashboard should be captured in one screen. However, there is no scroll bar also to scroll and see the full visual. The users can not actually make any meaningful conclusion because of incompleteness and lack of clarity.
 
-![*Figure 4: Incomplete Weekend Adjacency Matrix*](images/image3.jpg){width=40%}
+![*Figure 4: Incomplete Weekend Adjacency Matrix*](images/image3.jpg){width=30%}
 
 ### 4.1.4 Lack of Clarity in the Adjacency Matrix plots
 
@@ -226,8 +226,6 @@ The proposed interactive data visualization dashboard was prepared using Tableau
     
       - Compare the weekday and weekends/holiday frequencies for the cases a & b mentioned above and across these two cases.
 
-
-### 5.1 Tabs In-Bound and Out-Bound
 
 Both the tabs are same in the design except one is for In-Bound traffic to a Destination sub-zone and the other is for Out-Bound traffic from an origin sub-zone.
 
