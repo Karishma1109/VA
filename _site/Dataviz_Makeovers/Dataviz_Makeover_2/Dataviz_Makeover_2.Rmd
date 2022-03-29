@@ -415,6 +415,7 @@ Step 20 was followed to create the same chart for "Destination_Sz" in the second
 Step 21: Once the 3 sheets were created in the 2 workbooks for the Origin and Destination Sub-Zones respectively, dashboards were created. Creating Dashboard in Tableau is quite intuitive. 
 
 For the purpose of preparing the proposed data visualization, a new dashboard was created using the "+" tab for dashboard. Then the following dashboards were created.
+
   - Workbook 1: In the workbook 1, two dashboards were created:
   
     - "In-Bound Traffic to Destination Sub-Zone": The worksheet for the barplots was dragged and dropped on the dashboard area towards the left and then the worksheet for the "Frequency of Bus-Trips from Origin sub-zones for the Selected Destination" worksheet was dragged and dropped on the right. Subsequently, the "Select a Destination Sub-Zone" filter from the second work-sheet was linked to the same for the bar-plot worksheet by choosing "Apply to worksheet" option that appears when the filter options on the filter is clicked and "Bar-plots" sheet is selected. Then several adjustments were made to organise the content which involved just dragging and dropping the components around the dashboard to make it look like what is shown in figure 36.
@@ -512,7 +513,7 @@ Interestingly, the trips on weekends are quite low, this could be due to the bor
 
 ![*Figure 50: Trips Originating from Tampines East"*](images/image37.jpg){width=100%}
  
-7. Another key interesting observation is that the sub-zones with largest and second largest areas - "Western Water Catchment" and "Central Water Catchment" do not receive the highest bus-flows but rather they receive much below the average number of bus-flows across all the sub-zones because of the nature of the two sub-zones. 
+7. Another key interesting observation is that the sub-zones with the largest and the second largest areas - "Western Water Catchment" and "Central Water Catchment" do not receive the highest bus-flows but rather they receive much below the average number of bus-flows across all the sub-zones because of the nature of the two sub-zones. 
 
 The above are only a few observations, the dashboard can be used to actually study bus-flows across each and every sub-zone.
 
