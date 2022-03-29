@@ -123,13 +123,8 @@ The complete field name is captured from the data set and represented in figure 
 
 The field name is "Weekend/Holidays" is not fully captured in the data visualization leading to lack of clarity on what the field refers to. In this case, the users might confuse bus-trips that take place on a holiday that falls on a weekday to be counted in the "WEEKDAY" plots leading to misinterpretation. This is because they cannot see that the weekends and holidays are actually combined and represented separately in the "WEEKENDS.." plots.
 
-### 4.1.3 Incomplete Plot for Weekend/Holidays Adjacency Matrix of bus-trips between Origin and Destination sub-zones.
 
-The number of origin and destination sub-zones are the same for the weekday adjacency matrix and the weekends/holidays adjacency matrix and the aspect ratio is also the same but still the size of the adjacency matrix of the weekdays/holidays for bus-trips between origin and destination sub-zones is smaller, meaning that the plot is incomplete. The figure 4 represents the incomplete plot. Ideally, the entire view of all the plots in a dashboard should be captured in one screen. However, there is no scroll bar also to scroll and see the full visual. The users can not actually make any meaningful conclusion because of incompleteness and lack of clarity.
-
-![*Figure 4: Incomplete Weekend Adjacency Matrix*](images/image3.jpg){width=30%}
-
-### 4.1.4 Lack of Clarity in the Adjacency Matrix plots
+### 4.1.3 Lack of Clarity in the Adjacency Matrix plots
 
   a) **Title of the Weekend Adjacency Matrix is incomplete**: As mentioned earlier in section 4.1.2, for the "Weekend Adjacency Matrix" chart, the keyword "weekend" is not representative of the data for the field "Weekends/Holidays". It leads to misinterpretation of the data visualizations. 
 
@@ -137,16 +132,16 @@ The number of origin and destination sub-zones are the same for the weekday adja
   
   c) **Lack of clarity in the Tool tips**: The text, "% of Total Total Trips along Table (Across)" is ambiguous as it does not reflect the variable this percentage is for. It would be appropriate to change it to ‘% of Total Bus-Trips from the Origin Sub-zone’. 
   
-### 4.1.5 Existence of NULL Values for the Origin and Destination sub-zones
+### 4.1.4 Existence of NULL Values for the Origin and Destination sub-zones
 
 The dashboard gives the users an option to select NULL origin and destination sub-zones.
 The NULL Values for the origin and destination sub-zones were explored and it was found that the most of the NULL origin sub-zones do correspond to non-null destination sub-zones and most of NULL destination sub-zones correspond to non-null origin sub-zones. Apart from this, some of the records have NULL values for both the origin and destination sub-zones. This creates a lot of ambiguity.
 
-### 4.1.6 Lack of mention of the time period
+### 4.1.5 Lack of mention of the time period
 
 There is no mention of the time period for the data represented in the dashboard, which contributes to lack of clarity and the users cannot make any meaningful conclusions from the observed findings or they might end up generalizing the derived insights for time periods.
 
-### 4.1.7  Lack of dashboard caption
+### 4.1.6  Lack of dashboard caption
 
 There is no mention of the source of data in the caption. This makes it unclear to the user as to whether the charts comes use a reliable data source or not.
 
@@ -172,11 +167,13 @@ The color choice for the adjacency matrices is single sequential color, which sh
 
 ### 4.2.5 The sizes of the 2 adjacency matrices is different
 
-The sizes of the weekday and weekends/holidays adjacency matrices are different, the weekday one is bigger and the weekends/holidays one is smaller which looks inappropriate and degrades the aesthetics of the dashboard.
+The sizes of the weekday and weekends/holidays adjacency matrices are different, the weekday one is bigger and the weekends/holidays one is smaller as shown in the figure below. This looks inappropriate and degrades the aesthetics of the dashboard.
+
+![*Figure 4: Incomplete Weekend Adjacency Matrix*](images/image3.jpg){width=30%}
 
 ### 4.2.6 The size of the adjacency matrices is too small
 
-The size of the adjacency matrix is too small for the users to different one point from the other.
+The size of the adjacency matrix is too small for the users to differentiate one point on it from the other. This makes it very difficult for the users to navigate through the matrices and find the information they want to look at. While this degrades clarity, it also degrades the aesthetics. 
 
 ### 4.2.7 The y-axis titles for the bar-plots is incorrectly aligned
 
