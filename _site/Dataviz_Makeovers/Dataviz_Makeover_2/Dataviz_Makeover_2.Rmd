@@ -409,20 +409,64 @@ Eventually the tooltips were edited to shown the result shown in the figure belo
 
 Step 20 was followed to create the same chart for "Destination_Sz" in the second workbook.
 
-Step 21: Once the 3 sheets were created in the 2 workbooks for the Origin and Destination Sub-Zones respectively, dashboards were created.
+Step 21: Once the 3 sheets were created in the 2 workbooks for the Origin and Destination Sub-Zones respectively, dashboards were created. Creating Dashboard in Tableau is quite intuitive. 
 
-Step 22: The dashboards "In-Bound Traffic to Destination Sub-Zone", "Out-Bound Traffic From Origin Sub-Zone", "Trip Frequency Map for Origin Sub-Zone" and "Trip Frequency Map for Destination Sub-Zone" were published on Tableau public.
+For the purpose of preparing the proposed data visualization, a new dashboard was created using the "+" tab for dashboard. Then the following dashboards were created.
+  - Workbook 1: In the workbook 1, two dashboards were created:
+  
+    - "In-Bound Traffic to Destination Sub-Zone": The worksheet for the barplots was dragged and dropped on the dashboard area towards the left and then the worksheet for the "Frequency of Bus-Trips from Origin sub-zones for the Selected Destination" worksheet was dragged and dropped on the right. Subsequently, the "Select a Destination Sub-Zone" filter from the second work-sheet was linked to the same for the bar-plot worksheet by choosing "Apply to worksheet" option that appears when the filter options on the filter is clicked and "Bar-plots" sheet is selected. Then several adjustments were made to organise the content which involved just dragging and dropping the components around the dashboard to make it look like what is shown in figure 36.
+    
+    - "Trip Frequency Map for Destination Sub-Zone": Was prepared using the trip frequency map worksheet by simply creating a new dashboard and dragging and dropping the sheet on it and organizing the contents as shown in figure 37.
+  
+  - Workbook 2: 2 dashboard were created in this workbook too.
+  
+    - "Out-Bound Traffic From Origin Sub-Zone": Steps similar to the dashboard one in workbook 1 were followed to create the dashboard shown below, using the same steps as shown in figure 36.
+    
+    - "Trip Frequency Map for Origin Sub-Zone": Steps similar to the dashboard two in workbook 1 were followed to create dashboard, the steps followed were same as shown in figure 37.
+    
+    
+![*Figure 36: Creating the dashboard "Out-Bound Traffic From Origin Sub-Zone"*](images/image45.jpg){width=70%}
+    
+![*Figure 37: Creating the dashboard "Trip Frequency Map for Destination Sub-Zone"*](images/image46.jpg){width=70%}
 
-Step 23: An embedded web-page link was created for the "Trip Frequency Map for Origin Sub-Zone" dashboard by adding "&:toolbar=no&:showVizHome=no&embed=true" extension to the dashboard share link on Tableau. This link was used to add this as a webpage object to the "Trip Frequency Map for Destination Sub-Zone" dashboard to get them side by side as shown in the figure below.
+Step 22: The dashboards "In-Bound Traffic to Destination Sub-Zone", "Out-Bound Traffic From Origin Sub-Zone", "Trip Frequency Map for Origin Sub-Zone" and "Trip Frequency Map for Destination Sub-Zone" were published on Tableau public following the steps shown in figure 38 below. I was already logged into Tableau public, if you are not, then login is required. Then click Save when the dialog box shown in figure 39 appears, to publish the dashboard. Same steps were followed to publish all the 4 dashboards.
 
-![*Figure 36: Bus-Trips across Planning sub-zones in Singapore by Day Type"*](images/image32.jpg){width=70%}
+![*Figure 38: Saving the dashboards to Tableau Public"*](images/image47.jpg){width=70%}
+
+![*Figure 39: Set the Dashboard name and save"*](images/image48.jpg){width=50%}
 
 
-Step 24: Step 23 was repeated to create a tableau embed link for the "Out-Bound Traffic From Origin Sub-Zone" dashboard and this was pasted in the workbook 1 which has the "In-Bound Traffic to Destination Sub-Zone" dashboard. Along with it the dashboard "Bus-Trips across Planning sub-zones in Singapore by Day Type" created in step 23 was also added as another dashboard by copy and pasting the dashboard across sheets.
+Step 23: An embedded web-page link was created for the "Trip Frequency Map for Origin Sub-Zone" dashboard by adding "&:toolbar=no&:showVizHome=no&embed=true" extension to the dashboard share link on Tableau found following steps shown in figure 40. This link was used to add this as a webpage object to the "Trip Frequency Map for Destination Sub-Zone" dashboard following steps shown in figure 41, then publish it, to get a combined dashboard as shown in the figure 42 below.
+
+![*Figure 40: Copy the Share link"*](images/image49.jpg){width=70%}
+
+![*Figure 41: Getting the webpage object on tableau dashboard"*](images/image50.jpg){width=70%}
+
+
+![*Figure 42: Combined dashboard for frequency of trips to & fro selected sub-zones"*](images/image32.jpg){width=70%}
+
+
+Step 24: Step 23 was repeated to create a tableau embed link for the "Out-Bound Traffic From Origin Sub-Zone" dashboard and this was pasted in the workbook 1 which has the "In-Bound Traffic to Destination Sub-Zone" dashboard. Along with it the dashboard "Bus-Trips across Planning sub-zones in Singapore by Day Type" created in step 23 was also added as another dashboard by copy and pasting the dashboard across sheets. The dashboards were renamed for ease of interpretability, as follows:
+
+  - "In-Bound Traffic to Destination Sub-Zone" was renamed to "Destination Sub-Zone"
+  
+  -"Out-Bound Traffic From Origin Sub-Zone" was renamed to "Origin Sub-Zone"
+  
+  - "Bus-Trips across Planning sub-zones in Singapore by Day Type" dashboard was renamed to "Total Bus-Trips"
 
 Step 25: At the final step, we had 3 dashboards mentioned in step 24. 3 navigation buttons were created on all 3 dashboards following the steps listed in the figure below.
 
-![*Figure 37: Adding Navigation Buttons to the Dashboards"*](images/image33.jpg){width=70%}
+  - For the **In-Bound tab**, the "Navigate to" was set as the "Destination Sub-Zone" for viewing the charts for a selected Destination Sub-Zone as shown in figure 43.
+  
+  - For the **Out-Bound tab**, the "Navigate to" was set as the "Origin Sub-Zone" for viewing the charts for a selected Origin Sub-Zone. The steps followed were same as shown in figure 43.
+  
+  - For the **To & Fro** tab, the "Navigate to" was set as the "Total Bus-Trips" for viewing the charts for a selected Origin & Destination Sub-Zones. The steps followed were same as shown in figure 43.
+
+![*Figure 43: Adding Navigation Buttons to the Dashboards"*](images/image33.jpg){width=70%}
+
+The final results for the tab are already shown in figures 7, 8 & 9. One of the dashboards was selected and published on tableau public, any one can be selected as all the 3 are linked through the navigation buttons and the final visual dashboard was ready. Ta-da!
+
+For the understanding how to embed a webpage object on a Tableau dashboard, steps demonstrated in the Youtube [video1](https://www.youtube.com/watch?v=nWXK4sMspwo) were followed. And for understanding how to add navigation buttons, steps demonstrated in the Youtube [video2](https://www.youtube.com/watch?v=u9OUyZy_d8M) were followed.
 
 
 # 7. Observations:
@@ -434,37 +478,36 @@ The dashboard can be utilized by users to study the bus flows for various sub-zo
 1. The general trend is that the number bus-trips to & fro a sub-zone are higher for weekdays as compared to weekends for all the sub-zones. Which also makes sense as on weekdays, people have to travel around for work. While on weekends, they have the option to sit back home and relax.
 
 2. **Raffles Place** is a sub-zone under the Downtown Core Planning Area. 
-From the bar plots in figure 38, the number of Bus-Trips attracted to this place in the morning hours between 8 and 10 on weekdays is the highest, while the same trend is not observed for weekends/holidays suggesting that this a business sub-zone with many offices.
+From the bar plots in figure 44, the number of Bus-Trips attracted to this place in the morning hours between 8 and 10 on weekdays is the highest, while the same trend is not observed for weekends/holidays suggesting that this a business sub-zone with many offices.
 From the map on right, it can be observed that most of the trips coming to Raffles place are from the areas close to its proximity. The highest from Maritime Square, suggesting that this is the area where most of the people working in Raffles place are residing. The frequency of bus-trips to raffles place from farther sub-zones such as Senja and Saujana are very few for the month of January 2022.
 
-![*Figure 38: Peak time for bus-trips attracted to Raffles Place"*](images/image43.jpg){width=100%}
+![*Figure 44: Peak time for bus-trips attracted to Raffles Place"*](images/image43.jpg){width=85%}
 
-For the weekday evenings, it can be seen in figure 39 that most of the trips originating from Raffles are between 5-7 pm which corresponds to the time-period when most of the office close for the day. It can be seen that the people linger in the area till 8pm, suggesting that perhaps some offices close later or the people leave after hanging out for a bit for dinner.
+For the weekday evenings, it can be seen in figure 45 that most of the trips originating from Raffles are between 5-7 pm which corresponds to the time-period when most of the office close for the day. It can be seen that the people linger in the area till 8pm, suggesting that perhaps some offices close later or the people leave after hanging out for a bit for dinner.
 
-![*Figure 39: Peak time for bus-trips originating from Raffles Place"*](images/image43.jpg){width=100%}
+![*Figure 45: Peak time for bus-trips originating from Raffles Place"*](images/image43.jpg){width=85%}
 
-Similary for **Changi Airport** which is another popular business sub-zone in Singapore, Similar trends are observed.
+4. We can look at **Changi Airport**, to study the trends for international commute.
 
-
-From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively corresponds to workforce commuting to and from the airport. This suggests there is a lot of outflow of individuals to other countries for work and a lot of outflow from Changi Airport to various sub-zones in Singapore in the mornings of weekdays suggests people arriving back. Whereas this trend is consistent for the weekends/holidays.
+From the figures given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively corresponds to workforce commuting to and from the airport. This suggests there is a lot of outflow of individuals to other countries for work and a lot of outflow from Changi Airport to various sub-zones in Singapore in the mornings of weekdays suggests people arriving back. Whereas this trend is consistent for the weekends/holidays.
 Interestingly, the trips on weekends are quite low, this could be due to the border restrictions and lingering pandemic fear that people are not travelling for leisure and tourism as the time period in question is January, that is when the Omicron variat of the Coronavirus was at its peak.
 
-![*Figure 40: Peak time for Trips attracted to Changi Airport"*](images/image38.jpg){width=70%}
+![*Figure 46: Peak time for Trips attracted to Changi Airport"*](images/image38.jpg){width=100%}
 
-![*Figure 41: Peak time for trips originating from Changi Airport"*](images/image39.jpg){width=70%}
-
-
-3.	In case of **Sentosa** an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
-
-![*Figure 42: Bus Trips attracted to Sentosa"*](images/image34.jpg){width=70%}
+![*Figure 47: Peak time for trips originating from Changi Airport"*](images/image39.jpg){width=100%}
 
 
+5.	In case of **Sentosa** an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
 
-4. Tampines east appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east. There is not particular popular hourly interval in the day that can be singled out for Tampines. This suggests that Tampines could be a densely populated sub-zone.
+![*Figure 48: Bus Trips attracted to Sentosa"*](images/image34.jpg){width=100%}
 
-![*Figure 41: Most popular Sub-Zone"*](images/image35.jpg){width=70%}
 
-![*Figure 42: Most popular Sub-Zone"*](images/image37.jpg){width=70%}
+
+6. **Tampines East** appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east. There is not particular popular hourly interval in the day that can be singled out for Tampines. This suggests that Tampines could be a densely populated sub-zone.
+
+![*Figure 49: Tampines East - The most popular Sub-Zone"*](images/image35.jpg){width=100%}
+
+![*Figure 50: Trips Originating from Tampines East"*](images/image37.jpg){width=100%}
  
 
 # 8. References
