@@ -431,8 +431,9 @@ For optimum view, the dashboard is suggested to be opened in desktop or laptop s
 
 The dashboard can be utilized by users to study the bus flows for various sub-zones in Singapore and identify the sub-zones for business, those for leisure and recreation and those where the most number of residents are residing or visiting to and fro during different day types and hours of the day for month of January 2022.
 
+1. The general trend is that the number bus-trips to & fro a sub-zone are higher for weekdays as compared to weekends for all the sub-zones. Which also makes sense as on weekdays, people have to travel around for work. While on weekends, they have the option to sit back home and relax.
 
-1.	**Raffles Place** is a sub-zone under the Downtown Core Planning Area. 
+2. **Raffles Place** is a sub-zone under the Downtown Core Planning Area. 
 From the bar plots in figure 38, the number of Bus-Trips attracted to this place in the morning hours between 8 and 10 on weekdays is the highest, while the same trend is not observed for weekends/holidays suggesting that this a business sub-zone with many offices.
 From the map on right, it can be observed that most of the trips coming to Raffles place are from the areas close to its proximity. The highest from Maritime Square, suggesting that this is the area where most of the people working in Raffles place are residing. The frequency of bus-trips to raffles place from farther sub-zones such as Senja and Saujana are very few for the month of January 2022.
 
@@ -446,19 +447,20 @@ Similary for **Changi Airport** which is another popular business sub-zone in Si
 
 
 From the figure given below, it can be observed that the morning and evening peak of inbound and outbound bus trips respectively corresponds to workforce commuting to and from the airport. This suggests there is a lot of outflow of individuals to other countries for work and a lot of outflow from Changi Airport to various sub-zones in Singapore in the mornings of weekdays suggests people arriving back. Whereas this trend is consistent for the weekends/holidays.
+Interestingly, the trips on weekends are quite low, this could be due to the border restrictions and lingering pandemic fear that people are not travelling for leisure and tourism as the time period in question is January, that is when the Omicron variat of the Coronavirus was at its peak.
 
 ![*Figure 40: Peak time for Trips attracted to Changi Airport"*](images/image38.jpg){width=70%}
 
 ![*Figure 41: Peak time for trips originating from Changi Airport"*](images/image39.jpg){width=70%}
-Similar trends can be observed for other business sub-zones.
-
-2.	In case of **Sentosa** an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
-
-![*Figure 40: Adding Navigation Buttons to the Dashboards"*](images/image34.jpg){width=70%}
 
 
+3.	In case of **Sentosa** an interesting trend has been observed as shown in the figure given below, where the number of inbound trips on weekend around 11 am is same as on weekdays. This tells us that the place is a popular spot for recreation. 
 
-3. Tampines east appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east.
+![*Figure 42: Bus Trips attracted to Sentosa"*](images/image34.jpg){width=70%}
+
+
+
+4. Tampines east appears to be the most popular sub-zone, from where majority of the buses originate as well as terminate. Also majority of the buses that start at Tampines east also terminate at Tampines east. There is not particular popular hourly interval in the day that can be singled out for Tampines. This suggests that Tampines could be a densely populated sub-zone.
 
 ![*Figure 41: Most popular Sub-Zone"*](images/image35.jpg){width=70%}
 
